@@ -1,0 +1,22 @@
+.navigation-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding-top: 16px;
+  width: 533px;
+  justify-content: space-between;
+  margin-right: 138px;
+  margin-left: 30px;
+}
+
+.navigation-list__item {
+  list-style: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.navigation-list__item a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
