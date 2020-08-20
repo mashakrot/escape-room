@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.page-header__wrapper--modal-open {
+  opacity: 0.3;
+}
+
 .page-header__logo {
   display: block;
   width: 134px;
@@ -13,6 +17,9 @@
 
 .page-header__navigation {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  line-height: 30px;
 }
 
 .page-header__wrapper {

@@ -5,6 +5,7 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 17px;
   background-color: #191312;
+  min-height: 768px;
 }
 
 a {
@@ -12,9 +13,6 @@ a {
   display: block;
 }
 
-// .body--main {
-//   background-image: url("../img/w-a-t-a-r-i-535375-unsplash.jpg");
-//   background-size: 1366px 100%;
-//   background-repeat: no-repeat;
-//   background-position: top center;
-// }
+a:hover {
+  cursor: pointer;
+}

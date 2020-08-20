@@ -1,0 +1,18 @@
+.button-ask-question {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 0;
+  font-weight: 500;
+  font-size: 13px;
+  padding-top: 2px;
+  border-bottom: 1px dashed #ffffff;
+  height: 27px;
+  line-height: 144%;
+}
+
+.button-ask-question:hover {
+  color: #f2890f;
+  cursor: pointer;
+  border-block-color: #f2890f;
+}

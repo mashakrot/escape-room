@@ -1,9 +1,8 @@
 .button-select-city {
   padding: 0;
   margin: 0;
-  margin-right: 24px;
   border: none;
-  height: 15px;
+  height: 16px;
   background-color: transparent;
   color: #f2890f;
   text-transform: uppercase;
@@ -13,6 +12,7 @@
   font-size: 12px;
   letter-spacing: 0.02em;
   margin-top: 17px;
+  margin-right: calc(2vw - 3px);
 }
 
 .button-select-city::before {
@@ -26,4 +26,13 @@
   background-image: url("../../img/placemark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.button-select-city:focus {
+  border: 1px dotted #ffffff;
+}
+
+.button-select-city:hover {
+  border-bottom: 1px dashed #f2890f;
+  cursor: pointer;
 }

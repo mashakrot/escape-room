@@ -1,7 +1,14 @@
 .page-footer {
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   height: 53px;
+  position: fixed;
+  bottom: 0;
+}
+
+.page-footer--modal-open {
+  opacity: 0.3;
 }
 
 .page-footer__wrapper {

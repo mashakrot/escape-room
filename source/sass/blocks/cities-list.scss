@@ -1,0 +1,32 @@
+.cities-list {
+  padding: 0;
+  margin: 0;
+  margin-left: 32px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.cities-list__item {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cities-list__item a {
+  color: #ffffff;
+  font-size: 24px;
+  opacity: 0.32;
+  margin-right: 35px;
+}
+
+.cities-list__item a:focus-within {
+  opacity: 1;
+  color: #ffffff;
+  border-bottom: 2px solid #f2890f;
+  display: inline-block;
+}
+
+.cities-list__item a:hover {
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 1;
+}

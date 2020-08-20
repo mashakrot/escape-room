@@ -1,0 +1,31 @@
+.social-networks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.social-networks__item {
+  list-style: none;
+}
+
+.social-networks__instagram::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/instagram-default.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 28px;
+  height: 28px;
+}
+
+.social-networks__vk::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/vk-default.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 28px;
+  height: 28px;
+  margin-left: 35px;
+}
