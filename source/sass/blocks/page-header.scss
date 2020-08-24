@@ -5,7 +5,11 @@
   justify-content: center;
 }
 
-.page-header__wrapper--modal-open {
+.page-header__wrapper--cities-popup-open {
+  opacity: 0.3;
+}
+
+.page-header__wrapper--question-popup-open {
   opacity: 0.3;
 }
 

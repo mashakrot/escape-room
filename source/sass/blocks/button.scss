@@ -1,6 +1,7 @@
 .button {
   width: 250px;
   height: 65px;
+  padding: 0;
   border-radius: 65px;
   font-weight: 800;
   font-size: 17px;
@@ -19,4 +20,26 @@
 .button--select-quest:hover {
   background-color: #f39425;
   cursor: pointer;
+}
+
+.button--submit-question:disabled {
+  background-color: #b8b8b8;
+  width: 219px;
+  height: 47px;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 98px;
+  cursor: auto;
+}
+
+.button--submit-question {
+  background-color: #f28a0f;
+  width: 219px;
+  height: 47px;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 30px;
+  cursor: pointer;
+  margin-left: 98px;
 }

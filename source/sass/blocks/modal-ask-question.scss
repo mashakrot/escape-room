@@ -1,0 +1,24 @@
+.modal-ask-question {
+  display: none;
+  position: fixed;
+  width: 480px;
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
+  border-color: #ffffff;
+  border-radius: 3px;
+  top: 44px;
+  left: calc(50% - 240px);
+}
+
+.modal-ask-question--open {
+  display: block;
+}
+
+.modal-ask-question__title {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32px;
+  margin-top: 32px;
+  margin-left: 31px;
+}

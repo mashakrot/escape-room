@@ -67,7 +67,7 @@
 
     <section class="modal-select-city">
       <h3 class="modal-select-city__title">Ваш город:</h3>
-      <div class="close-button"></div>
+      <div class="close-button modal-select-city--close-button"></div>
       <a class="button-to-locate" href="#">Определить местоположение</a>
 
       <p class="modal-select-city__text">... или выберите вручную</p>
@@ -90,7 +90,29 @@
       </ul>
     </section>
 
-    <script src="js/open-close-modal.js"></script>
+    <section class="modal-ask-question">
+      <h3 class="modal-ask-question__title">Задайте вопрос</h3>
+      <div class="close-button modal-ask-question--close-button"></div>
+      <form class="question-form" action="#">
+        <p class="question-form__text">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
+        <legend class="question-form__name-legend question-form__name-legend--focus">Имя</legend>
+        <input class="question-form__input question-form__name-input" name="name" type="text" autofocus>
+
+        <p class="question-form__text">Чтобы вы получили ответ, оставьте ваш e-mail </p>
+        <legend class="question-form__email-legend">E-mail</legend>
+        <input class="question-form__input question-form__email-input" name="e-mail" type="email" placeholder="E-mail">
+        <p style="display: none;" class="question-form__invalid-text">Введён некорректный e-mail, попробуйте заново</p>
+
+        <p class="question-form__moving-text">Ваш вопрос:</p>
+        <textarea class="question-form__textarea" name="question" placeholder="Начните вводить ..."></textarea>
+        <button class="button button--submit-question" type="submit" disabled>Отправить вопрос</button>
+
+        <input class="question-form__checkbox" name="user-agreement" type="checkbox" id="rules">
+        <label class="question-form__label" for="rules">Я согласен с <a href="#">правилами обработки персональных данных</a> <br> и пользовательским соглашением</label>
+      </form>
+    </section>
+
+    <script src="js/select-city-popup.js"></script>
     <script src="js/ask-question-popup.js"></script>
   </body>
 </html>
