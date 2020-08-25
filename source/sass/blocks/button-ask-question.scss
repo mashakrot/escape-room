@@ -16,3 +16,9 @@
   cursor: pointer;
   border-bottom-color: #f2890f;
 }
+
+@media (max-width: 767px) {
+  .button-ask-question {
+    font-size: 16px;
+  }
+}

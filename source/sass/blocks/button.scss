@@ -43,3 +43,32 @@
   cursor: pointer;
   margin-left: 98px;
 }
+
+@media (max-width: 1023px) {
+  .button--select-quest {
+    width: 225px;
+    height: 55px;
+    font-size: 15px;
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button--select-quest {
+    width: 185px;
+    height: 47px;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 34px;
+  }
+
+  .button--submit-question {
+    margin-top: 30px;
+    margin-left: calc(50% - 114px);
+  }
+
+  .button--submit-question:disabled {
+    margin-top: 30px;
+    margin-left: calc(50% - 114px);
+  }
+}

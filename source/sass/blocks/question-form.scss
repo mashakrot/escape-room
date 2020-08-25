@@ -179,3 +179,81 @@
   background-repeat: no-repeat;
   background-position: 4px 4px;
 }
+
+@media (max-width: 1023px) {
+  .question-form__text {
+    font-size: 13px;
+  }
+
+  .question-form__moving-text {
+    font-size: 13px;
+  }
+
+  .question-form__input {
+    width: 380px;
+  }
+
+  .question-form__textarea {
+    width: 380px;
+  }
+
+  .question-form__label {
+    font-size: 13px;
+  }
+
+  .question-form__label a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .question-form {
+    margin: 0 15px;
+  }
+
+  .question-form__text {
+    font-size: 15px;
+    margin-top: 30px;
+    line-height: 22px;
+  }
+
+  .question-form__input {
+    margin-top: 15px;
+    width: calc(100% - 10px);
+  }
+
+  .question-form__moving-text {
+    font-size: 15px;
+  }
+
+  .question-form__textarea {
+    padding-top: 17px;
+    width: calc(100% - 10px);
+  }
+
+  .question-form__label {
+    font-size: 14px;
+    width: 330px;
+    margin: 0 auto;
+    margin-top: 23px;
+    padding-left: 23px;
+  }
+
+  .question-form__label a {
+    font-size: 14px;
+    display: inline;
+  }
+
+  .question-form__name-legend--focus {
+    margin-left: 20px;
+    margin-top: 81px;
+  }
+
+  .question-form__email-legend--focus {
+    margin-top: 224px;
+  }
+
+  .question-form__email-legend--invalid {
+    margin-top: 224px;
+  }
+}

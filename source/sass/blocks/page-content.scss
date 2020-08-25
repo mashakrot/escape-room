@@ -1,6 +1,8 @@
 .page-content {
   width: calc(100% - 272px);
   margin: 0 auto;
+  max-width: 1094px;
+  margin-top: 74px;
   padding: 0;
 }
 
@@ -10,4 +12,19 @@
 
 .page-content--question-popup-open {
   opacity: 0.3;
+}
+
+@media (max-width: 1023px) {
+  .page-content {
+    width: calc(100% - 103px);
+  }
+}
+
+@media (max-width: 767px) {
+  .page-content {
+    width: calc(100% - 32px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }

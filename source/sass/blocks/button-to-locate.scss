@@ -19,3 +19,18 @@
   margin-left: -30px;
   margin-top: -3px;
 }
+
+@media (max-width: 1023px) {
+  .button-to-locate {
+    font-size: 15px;
+    height: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button-to-locate {
+    font-size: 17px;
+    height: 22px;
+    margin-left: 45px;
+  }
+}

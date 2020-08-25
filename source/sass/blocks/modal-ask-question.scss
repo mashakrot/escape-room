@@ -22,3 +22,29 @@
   margin-top: 32px;
   margin-left: 31px;
 }
+
+@media (max-width: 1023px) {
+  .modal-ask-question {
+    width: 460px;
+    left: calc(50% - 230px);
+  }
+
+  .modal-ask-question__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-ask-question {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .modal-ask-question__title {
+    font-size: 32px;
+    margin-top: 32px;
+    margin-left: 15px;
+  }
+}

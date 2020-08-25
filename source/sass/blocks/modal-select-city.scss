@@ -33,3 +33,39 @@
   font-stretch: condensed;
   font-weight: 400;
 }
+
+@media (max-width: 1023px) {
+  .modal-select-city {
+    width: 460px;
+    left: calc(50% - 230px);
+  }
+
+  .modal-select-city__title {
+    font-size: 30px;
+  }
+
+  .modal-select-city__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-select-city {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .modal-select-city__title {
+    font-size: 32px;
+    margin-top: 32px;
+    margin-left: 15px;
+  }
+
+  .modal-select-city__text {
+    font-size: 17px;
+    margin-top: 45px;
+    margin-left: 17px;
+  }
+}

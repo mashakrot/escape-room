@@ -4,7 +4,7 @@
   display: flex;
   padding-top: 10px;
   justify-content: space-between;
-  margin-right: 10vw;
+  width: calc(100% - 377px);
 }
 
 .navigation-list__item {
@@ -12,10 +12,38 @@
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.03em;
-  padding-left: 48px;
+  padding: 0 10px;
 }
 
 .navigation-list__item a {
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+  .navigation-list {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .navigation-list__item {
+    padding: 0 calc(5% - 8px);
+  }
+
+  .navigation-list__item:last-child {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation-list {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .navigation-list__item {
+    text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+  }
 }

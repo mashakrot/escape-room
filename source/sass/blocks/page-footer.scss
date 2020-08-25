@@ -17,8 +17,19 @@
 
 .page-footer__wrapper {
   width: calc(100% - 63px);
+  max-width: 1303px;
   margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .page-footer {
+    display: none;
+  }
+
+  .page-footer__wrapper {
+    width: calc(100% - 32px);
+  }
 }

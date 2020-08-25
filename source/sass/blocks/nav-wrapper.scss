@@ -1,0 +1,21 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .nav-wrapper {
+    justify-content: flex-end;
+    padding-top: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-wrapper {
+    flex-direction: column;
+    padding-top: 31px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    margin: 0 16px;
+  }
+}

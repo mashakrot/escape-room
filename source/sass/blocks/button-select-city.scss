@@ -1,6 +1,6 @@
 .button-select-city {
   padding: 0;
-  margin: 0;
+  margin: 0 15px;
   border: none;
   height: 16px;
   background-color: transparent;
@@ -12,7 +12,6 @@
   font-size: 12px;
   letter-spacing: 0.02em;
   margin-top: 17px;
-  margin-right: calc(2vw - 3px);
 }
 
 .button-select-city::before {
@@ -35,4 +34,14 @@
 .button-select-city:hover {
   border-bottom: 1px dashed #f2890f;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .button-select-city {
+    height: auto;
+    margin: 0 auto;
+    margin-left: calc(50% - 35px);
+    margin-bottom: 13px;
+    padding-top: 13px;
+  }
 }
