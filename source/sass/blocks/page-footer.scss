@@ -29,6 +29,10 @@
     display: none;
   }
 
+  .page-footer--menu-open {
+    display: block;
+  }
+
   .page-footer__wrapper {
     width: calc(100% - 32px);
   }

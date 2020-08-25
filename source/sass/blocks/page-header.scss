@@ -45,6 +45,7 @@
 @media (max-width: 1023px) {
   .page-header__wrapper {
     padding-top: 18px;
+    display: flex;
   }
 
   .page-header__logo {
@@ -52,6 +53,7 @@
   }
 
   .page-header__navigation {
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     flex-direction: column;
@@ -66,6 +68,10 @@
     width: 100%;
   }
 
+  .page-header__wrapper--menu-open {
+    background: linear-gradient(170.74deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%)
+  }
+
   .page-header__navigation {
     display: none;
     width: 100%;
@@ -73,6 +79,11 @@
     line-height: 31px;
     flex-direction: column-reverse;
   }
+
+  .page-header__navigation--menu-open {
+    display: flex;
+  }
+
   .page-header__logo-wrapper {
     width: calc(100% - 29px);
     margin: 0 auto;
