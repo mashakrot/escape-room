@@ -2,6 +2,7 @@
 
 (function () {
   var navigationButton = document.querySelector('.navigation-button');
+  var navigationButtonOpen = document.querySelector('.navigation-button--menu-open');
 
   var navigation = document.querySelector('.page-header__navigation');
   var footer = document.querySelector('.page-footer');

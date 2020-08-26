@@ -8,22 +8,22 @@
   var pageContent = document.querySelector('.page-content');
   var pageFooter = document.querySelector('.page-footer');
 
-  var closeButton = document.querySelector('.close-button');
+  var closeButton = document.querySelector('.modal-select-city--close-button');
 
   var openPopup = function () {
     modalSelectCity.classList.add('modal-select-city--open');
-    body.classList.add('body--modal-open');
-    pageHeader.classList.add('page-header__wrapper--modal-open');
-    pageContent.classList.add('page-content--modal-open');
-    pageFooter.classList.add('page-footer--modal-open');
+    body.classList.add('body--cities-popup-open');
+    pageHeader.classList.add('page-header__wrapper--cities-popup-open');
+    pageContent.classList.add('page-content--cities-popup-open');
+    pageFooter.classList.add('page-footer--cities-popup-open');
   };
 
   var closePopup = function () {
     modalSelectCity.classList.remove('modal-select-city--open');
-    body.classList.remove('body--modal-open');
-    pageHeader.classList.remove('page-header__wrapper--modal-open');
-    pageContent.classList.remove('page-content--modal-open');
-    pageFooter.classList.remove('page-footer--modal-open');
+    body.classList.remove('body--cities-popup-open');
+    pageHeader.classList.remove('page-header__wrapper--cities-popup-open');
+    pageContent.classList.remove('page-content--cities-popup-open');
+    pageFooter.classList.remove('page-footer--cities-popup-open');
   };
 
   var onSelectCityMouseDown = function () {
