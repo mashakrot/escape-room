@@ -42,7 +42,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="main.html">
             <picture>
               <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
               <img src="img/logo-desktop.svg" alt="Логотип Escape room" width="134" height="52">
@@ -52,8 +52,8 @@
         </div>
         <nav class="page-header__navigation">
           <ul class="navigation-list">
-            <li class="navigation-list__item">
-              <a href="catalog.html">Квесты</a>
+            <li class="navigation-list__item navigation-list__item--active">
+              <a href="#">Квесты</a>
             </li>
             <li class="navigation-list__item">
               <a href="#">Новичкам</a>
@@ -77,9 +77,144 @@
     </header>
 
     <main class="page-content">
-      <h1 class="page-title">Лучшие квесты <br> в Новосибирске</h1>
-      <p class="page-promo-text">Надоело проводить свободное время лёжа на диване? <br> Игровые площадки questroom на целый час погружают <br> вас в мир незабываемых авантюр. Ищите подсказки, <br> решайте головоломки и находите выход из комнаты!</p>
-      <button class="button button--select-quest">Выбрать квест</button>
+      <p class="quests-place">квесты в Новосибирске</p>
+      <h1 class="catalog-title">Выберите тематику</h1>
+      <ul class="choice-quests-list">
+        <li class="choice-quests-list__item choice-quests-list__all-quests choice-quests-list__item--active">
+          <a href="#">Все квесты</a>
+        </li>
+        <li class="choice-quests-list__item choice-quests-list__adventures">
+          <a href="#">Приключения</a>
+        </li>
+        <li class="choice-quests-list__item choice-quests-list__horrors">
+          <a href="#">Ужасы</a>
+        </li>
+        <li class="choice-quests-list__item choice-quests-list__mysticism">
+          <a href="#">Мистика</a>
+        </li>
+        <li class="choice-quests-list__item choice-quests-list__detective">
+          <a href="#">Детектив</a>
+        </li>
+        <li class="choice-quests-list__item choice-quests-list__sci-fi">
+          <a href="#">Sci-fi</a>
+        </li>
+      </ul>
+      <ul class="quests-list">
+        <li class="quests-list__item">
+          <a href="#">
+            <div>Хит</div>
+            <h3 class="quests-list__title">Склеп</h3>
+            <p class="quests-list__address">пр. Ленина, 37</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">2-5 чел</li>
+              <li class="quest-features__level">сложный</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <div>Хит</div>
+            <h3 class="quests-list__title">Маньяк</h3>
+            <p class="quests-list__address">Вехнетецкая, 32</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">3-6 чел</li>
+              <li class="quest-features__level">средний</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <h3 class="quests-list__title">Ритуал</h3>
+            <p class="quests-list__address">пр. Ленина, 37</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">3-5 чел</li>
+              <li class="quest-features__level">сложный</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <h3 class="quests-list__title">История призраков</h3>
+            <p class="quests-list__address">Новослободская, 2а</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">5-6 чел</li>
+              <li class="quest-features__level">легкий</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <h3 class="quests-list__title">Тайна старого особняка</h3>
+            <p class="quests-list__address">прю Ленина, 37</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">2-5 чел</li>
+              <li class="quest-features__level">легкий</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <div>Хит</div>
+            <h3 class="quests-list__title">Хижина в лесу</h3>
+            <p class="quests-list__address">Верхнетецкая, 32</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">4-7 чел</li>
+              <li class="quest-features__level">средний</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <div>Хит</div>
+            <h3 class="quests-list__title">Фатальный эксперемент</h3>
+            <p class="quests-list__address">Ворхнетецкая, 32</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">5-8 чел</li>
+              <li class="quest-features__level">сложный</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <h3 class="quests-list__title">Метро 2033</h3>
+            <p class="quests-list__address">Новослободская, 2а</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">6-8 чел</li>
+              <li class="quest-features__level">средний</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <h3 class="quests-list__title">Старый чердак</h3>
+            <p class="quests-list__address">Новослободская, 2а</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">2-3 чел</li>
+              <li class="quest-features__level">легкий</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <h3 class="quests-list__title">Последний рубеж</h3>
+            <p class="quests-list__address">Верхнетецкая, 32</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">4-7 чел</li>
+              <li class="quest-features__level">средний</li>
+            </ul>
+          </a>
+        </li>
+        <li class="quests-list__item">
+          <a href="#">
+            <h3 class="quests-list__title">Марс-2056</h3>
+            <p class="quests-list__address">пр. Ленина, 37</p>
+            <ul class="quest-features">
+              <li class="quest-features__number-of-people">2-4 чел</li>
+              <li class="quest-features__level">легкий</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
     </main>
 
     <footer class="page-footer">

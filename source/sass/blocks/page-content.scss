@@ -4,6 +4,7 @@
   max-width: 1094px;
   margin-top: 74px;
   padding: 0;
+  height: calc(100vh - 74px);
 }
 
 .page-content--cities-popup-open {
@@ -26,5 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    height: 100%;
+    margin-bottom: 64px;
   }
 }

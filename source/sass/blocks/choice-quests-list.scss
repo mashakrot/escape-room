@@ -1,0 +1,127 @@
+.choice-quests-list {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  width: 1080px;
+  height: 40px;
+  list-style: none;
+  margin-top: 48px;
+}
+
+.choice-quests-list__item {
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.32);
+  padding-right: 40px;
+  padding-top: 10px;
+}
+
+.choice-quests-list__item:last-child {
+  border: none;
+}
+
+.choice-quests-list__item a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  height: 21px;
+}
+
+.choice-quests-list__item--active a {
+  border-bottom: 2px solid #f2890f;
+}
+
+.choice-quests-list__all-quests {
+  padding-left: 31px;
+}
+
+.choice-quests-list__all-quests::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 30px;
+  background-image: url("../../img/all-quests.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: -75px;
+  margin-top: -6px;
+}
+
+.choice-quests-list__adventures {
+  padding-left: 86px;
+}
+
+.choice-quests-list__adventures::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  background-image: url("../../img/adventures.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: -93px;
+  margin-top: -6px;
+}
+
+.choice-quests-list__horrors {
+  padding-left: 81px;
+}
+
+.choice-quests-list__horrors::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/horrors.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: -6px;
+  margin-left: -63px;
+}
+
+.choice-quests-list__mysticism {
+  padding-left: 80px;
+}
+
+.choice-quests-list__mysticism::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/mysticism.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: -6px;
+  margin-left: -69px;
+}
+
+.choice-quests-list__detective {
+  padding-left: 90px;
+}
+
+.choice-quests-list__detective::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background-image: url("../../img/detective.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: -6px;
+  margin-left: -83px;
+}
+
+.choice-quests-list__sci-fi {
+  padding-left: 79px;
+}
+
+.choice-quests-list__sci-fi::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 30px;
+  background-image: url("../../img/sciFi.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: -6px;
+  margin-left: -56px;
+}
