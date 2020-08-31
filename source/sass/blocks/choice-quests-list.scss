@@ -2,17 +2,20 @@
   display: flex;
   padding: 0;
   margin: 0 auto;
-  width: 1080px;
+  // width: 1080px;
+  width: calc(100% - 14px);
   height: 40px;
   list-style: none;
   margin-top: 48px;
+  justify-content: center;
 }
 
 .choice-quests-list__item {
   text-align: center;
   border-right: 1px solid rgba(255, 255, 255, 0.32);
-  padding-right: 40px;
+  // padding-right: 40px;
   padding-top: 10px;
+  padding-right: calc(10% - 68px);
 }
 
 .choice-quests-list__item:last-child {
@@ -31,7 +34,8 @@
 }
 
 .choice-quests-list__all-quests {
-  padding-left: 31px;
+  // padding-left: 31px;
+  padding-left: calc(10% - 77px);
 }
 
 .choice-quests-list__all-quests::before {
@@ -47,7 +51,8 @@
 }
 
 .choice-quests-list__adventures {
-  padding-left: 86px;
+  // padding-left: 86px;
+  padding-left: calc(10% - 21px);
 }
 
 .choice-quests-list__adventures::before {
@@ -63,7 +68,8 @@
 }
 
 .choice-quests-list__horrors {
-  padding-left: 81px;
+  // padding-left: 81px;
+  padding-left: calc(10% - 28px);
 }
 
 .choice-quests-list__horrors::before {
@@ -79,7 +85,8 @@
 }
 
 .choice-quests-list__mysticism {
-  padding-left: 80px;
+  // padding-left: 80px;
+  padding-left: calc(10% - 27px);
 }
 
 .choice-quests-list__mysticism::before {
@@ -95,7 +102,8 @@
 }
 
 .choice-quests-list__detective {
-  padding-left: 90px;
+  // padding-left: 90px;
+  padding-left: calc(10% - 18px);
 }
 
 .choice-quests-list__detective::before {
@@ -111,7 +119,8 @@
 }
 
 .choice-quests-list__sci-fi {
-  padding-left: 79px;
+  // padding-left: 79px;
+  padding-left: calc(10% - 30px);
 }
 
 .choice-quests-list__sci-fi::before {
@@ -124,4 +133,107 @@
   background-position: 0 0;
   margin-top: -6px;
   margin-left: -56px;
+}
+
+@media (max-width: 1023px) {
+  .choice-quests-list {
+    width: 550px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .choice-quests-list__item {
+    padding-right: 40px;
+    margin-top: 25px;
+  }
+
+  .choice-quests-list__all-quests {
+    padding-left: 31px;
+  }
+
+  .choice-quests-list__adventures {
+    padding-left: 86px;
+  }
+
+  .choice-quests-list__horrors {
+    padding-left: 81px;
+  }
+
+  .choice-quests-list__mysticism {
+    padding-left: 34px;
+  }
+
+  .choice-quests-list__detective {
+    padding-left: 114px;
+  }
+
+  .choice-quests-list__sci-fi {
+    padding-left: 79px;
+  }
+
+  .choice-quests-list__item:nth-child(3n) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .choice-quests-list {
+    width: 536px;
+    flex-wrap: inherit;
+    height: 32px;
+    margin-top: 41px;
+    justify-content: normal;
+  }
+
+  .choice-quests-list__item {
+    margin: 0;
+    padding: 0;
+    padding-right: 16px;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .choice-quests-list__all-quests::before {
+    width: 21px;
+    height: 24px;
+    background-size: 21px 24px;
+    margin-top: -4px;
+    margin-left: -71px;
+  }
+
+  .choice-quests-list__adventures::before {
+    width: 29px;
+    height: 24px;
+    background-size: 29px 24px;
+    margin-top: -4px;
+  }
+
+  .choice-quests-list__horrors::before {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    margin-top: -4px;
+  }
+
+  .choice-quests-list__mystics::before {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    margin-top: -4px;
+  }
+
+  .choice-quests-list__detective::before {
+    width: 32px;
+    height: 24px;
+    background-size: 32px 24px;
+    margin-top: -4px;
+  }
+
+  .choice-quests-list__sci-fi::before {
+    width: 23px;
+    height: 24px;
+    background-size: 23px 24px;
+    margin-top: -4px;
+  }
 }

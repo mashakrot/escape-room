@@ -1,0 +1,44 @@
+.quest-features {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  height: 20px;
+  margin-left: 43px;
+  padding-bottom: 19px;
+}
+
+.quest-features__level {
+  padding-left: 35px;
+}
+
+.quest-features__level::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("../../img/puzzle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: -23px;
+}
+
+.quest-features__number-of-people {
+  padding-right: 11px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.quest-features__number-of-people::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 16px;
+  background-image: url("../../img/person.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: -23px;
+}

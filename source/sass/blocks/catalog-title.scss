@@ -5,4 +5,23 @@
   padding: 0;
   margin: 0;
   margin-top: 7px;
+  letter-spacing: -0.007em;
+}
+
+@media (max-width: 1023px) {
+  .catalog-title {
+    width: calc(25% + 515px);
+    font-size: 60px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog-title {
+    width: 328px;
+    margin: 0 auto;
+    margin-top: 12px;
+    line-height: 40px;
+    font-size: 36px;
+  }
 }
