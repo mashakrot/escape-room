@@ -1,0 +1,66 @@
+.specifications-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  color: #ffffff;
+  height: 36px;
+  margin-top: 31px;
+}
+
+.specifications-list__item {
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
+  padding-right: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.specifications-list__item--time {
+  padding-left: 60px;
+}
+
+.specifications-list__item--time::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/clock.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: -31px;
+  margin-top: -5px;
+}
+
+.specifications-list__item--number-of-people {
+  padding-left: 54px;
+}
+
+.specifications-list__item--number-of-people::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 24px;
+  background-image: url("../../img/person.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: -31px;
+  margin-top: -5px;
+}
+
+.specifications-list__item--level {
+  padding-left: 55px;
+}
+
+.specifications-list__item--level::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/puzzle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: -31px;
+  margin-top: -5px;
+}
