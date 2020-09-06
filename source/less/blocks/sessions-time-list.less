@@ -1,0 +1,95 @@
+.sessions-time-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 852px;
+  width: calc(80% - 23px);
+  margin-top: 50px;
+  margin-left: 46px;
+}
+
+.sessions-time-list__item {
+  color: #ffffff;
+  margin-right: 32px;
+  margin-bottom: 35px;
+}
+
+.sessions-time-list__input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.sessions-time-list__label {
+  cursor: pointer;
+  display: block;
+  border: 2px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 65px;
+  width: 110px;
+  height: 38px;
+  text-align: center;
+  padding-top: 6px;
+  letter-spacing: 0.05em;
+}
+
+.sessions-time-list__input:disabled + .sessions-time-list__label {
+  border: none;
+  padding-top: 8px;
+  background: linear-gradient(158.6deg, #F2890F 9.78%, #B8600F 79.81%);
+}
+
+.sessions-time-list__input:checked + .sessions-time-list__label {
+  border: none;
+  padding-top: 8px;
+  background: linear-gradient(180deg, #2CDB52 0%, #13BA19 100%);
+}
+
+.session-time-list__prace {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 4px;
+  margin-left: -13px;
+}
+
+.session-time-list__prace::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 11px;
+  background-image: url("../img/ruble.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: 4px;
+  margin-top: 2px;
+  background-size: 8px 11px;
+}
+
+@media (max-width: 1023px) {
+  .sessions-time-list {
+    width: 628px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: calc(20% - 82px);
+  }
+}
+
+@media (max-width: 767px) {
+  .sessions-time-list {
+    width: calc(100% - 58px);
+    margin: 0;
+    margin-top: 49px;
+  }
+
+  .sessions-time-list__item {
+    margin: 0;
+    margin-bottom: 35px;
+    margin-right: 25px;
+  }
+}

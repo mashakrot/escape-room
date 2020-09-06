@@ -1,0 +1,34 @@
+.button-select-date {
+  padding: 0;
+  margin: 0;
+  height: 38px;
+  border: none;
+  border-bottom: 2px solid #f2890f;
+  background: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  margin-left: 47px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.button-select-date::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 7px;
+  background-image: url("../img/big-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .button-select-date {
+    margin: 0;
+    
+  }
+}

@@ -5,16 +5,20 @@
   list-style: none;
   color: #ffffff;
   height: 36px;
-  margin-top: 31px;
+  margin-top: 22px;
 }
 
 .specifications-list__item {
   border-right: 1px solid rgba(255, 255, 255, 0.36);
-  padding-right: 24px;
+  padding-right: 25px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   padding-top: 10px;
+}
+
+.specifications-list__item:last-child {
+  border: none;
 }
 
 .specifications-list__item--time {
@@ -26,7 +30,7 @@
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url("../../img/clock.svg");
+  background-image: url("../img/clock.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-left: -31px;
@@ -42,7 +46,7 @@
   position: absolute;
   width: 19px;
   height: 24px;
-  background-image: url("../../img/person.svg");
+  background-image: url("../img/person.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-left: -31px;
@@ -58,9 +62,48 @@
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url("../../img/puzzle.svg");
+  background-image: url("../img/puzzle.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-left: -31px;
   margin-top: -5px;
+}
+
+@media (max-width: 1023px) {
+  .specifications-list__item {
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .specifications-list {
+    height: 48px;
+    width: 360px;
+    padding: 0;
+    margin: 0;
+    margin-top: 21px;
+  }
+
+  .specifications-list__item {
+    padding: 0;
+    margin: 0;
+    width: 119px;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .specifications-list__item--time::before {
+    margin-left: 12px;
+    margin-top: -32px;
+  }
+
+  .specifications-list__item--number-of-people::before {
+    margin-left: 15px;
+    margin-top: -32px;
+  }
+
+  .specifications-list__item--level::before {
+    margin-left: 16px;
+    margin-top: -32px;
+  }
 }

@@ -1,0 +1,26 @@
+.button-all-quests {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .button-all-quests {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 32px;
+  }
+
+  .button-all-quests::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-top: 1px;
+    margin-left: -17px;
+  }
+}
+

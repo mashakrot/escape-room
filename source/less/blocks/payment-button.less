@@ -1,0 +1,39 @@
+.payment-button {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  height: max-content;
+  margin-top: 57px;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #f2890f;
+  padding-bottom: 9px;
+  padding-right: 11px;
+}
+
+.payment-button::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 7px;
+  background-image: url("../img/big-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: 7px;
+  margin-left: 6px;
+}
+
+@media (max-width: 1023px) {
+  .payment-button {
+    width: max-content;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .payment-button {
+    margin-top: 27px;
+    padding-bottom: 7px;
+  }
+}

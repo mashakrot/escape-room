@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Заказ квеста</title>
+  </head>
+
+  <body class="body">
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="main.html">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+              <img src="img/logo-desktop.svg" alt="Логотип Escape room" width="134" height="52">
+            </picture>
+          </a>
+          <div class="navigation-button">Меню</div>
+        </div>
+        <nav class="page-header__navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item navigation-list__item--active">
+              <a href="catalog.html">Квесты</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Новичкам</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="nav-wrapper">
+            <button class="button-select-city" tabindex="0" type="button">Новосибирск</button>
+            <a class="contact-phone" href="8(383)2840160">8 (383) 284 01 60</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content quest-order">
+      <a href="maniac.html" class="quest-order__description">Описание</a>
+      <p class="quest-order__genre">хоррор, триллер</p>
+
+      <p class="quest-order__text">Выбранный квест</p>
+      <h1 class="quest-order__title">Маньяк</h1>
+
+      <!-- <div class="quest-order__wrapper">
+        <p class="quest-order__your-order">Вы выбрали игру <br> 22 марта в 16:00. <br> К оплате 1500 рублей</p>
+        <a href="#" class="payment-button">Перейти к оплате</a>
+      </div> -->
+
+      <div class="select-date-wrapper">
+        <!-- <input class="button-select-date" type="text" id="datepicker"> -->
+        <button class="button-select-date">Выберите дату</button>
+        <p class="selected-date">22 марта</p>
+      </div>
+      <ul class="sessions-states">
+        <li class="sessions-states__item sessions-states__item--free">– свободно</li>
+        <li class="sessions-states__item sessions-states__item--busy">– занято</li>
+        <li class="sessions-states__item sessions-states__item--selected">– выбрано вами</li>
+      </ul>
+
+      <ul class="sessions-time-list">
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-9:45" name="session-time" value="9:45" type="radio">
+          <label class="sessions-time-list__label" for="time-9:45">9:45</label>
+
+          <p class="session-time-list__prace">1400</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-11:00" name="session-time" value="11:00" type="radio">
+          <label class="sessions-time-list__label" for="time-11:00">11:00</label>
+
+          <p class="session-time-list__prace">1400</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-12:15" name="session-time" value="12:15" type="radio" disabled>
+          <label class="sessions-time-list__label" for="time-12:15">12:15</label>
+
+          <p class="session-time-list__prace">1400</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-13:30" name="session-time" value="13:30" type="radio" disabled>
+          <label class="sessions-time-list__label" for="time-13:30">13:30</label>
+
+          <p class="session-time-list__prace">1400</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-14:45" name="session-time" value="14:45" type="radio">
+          <label class="sessions-time-list__label" for="time-14:45">14:45</label>
+
+          <p class="session-time-list__prace">1400</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-16:00" name="session-time" value="16:00" type="radio">
+          <label class="sessions-time-list__label" for="time-16:00">16:00</label>
+          <p class="session-time-list__prace">1500</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-17:15" name="session-time" value="17:15" type="radio" disabled>
+          <label class="sessions-time-list__label" for="time-17:15">17:15</label>
+
+          <p class="session-time-list__prace">1500</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-18:30" name="session-time" value="18:30" type="radio">
+          <label class="sessions-time-list__label" for="time-18:30">18:30</label>
+
+          <p class="session-time-list__prace">1500</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-19:45" name="session-time" value="19:45" type="radio">
+          <label class="sessions-time-list__label" for="time-19:45">19:45</label>
+
+          <p class="session-time-list__prace">1500</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-21:00" name="session-time" value="21:00" type="radio">
+          <label class="sessions-time-list__label" for="time-21:00">21:00</label>
+          <p class="session-time-list__prace">1800</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-22:15" name="session-time" value="22:15" type="radio" disabled>
+          <label class="sessions-time-list__label" for="time-22:15">22:15</label>
+          <p class="session-time-list__prace">1800</p>
+        </li>
+        <li class="sessions-time-list__item">
+          <input class="sessions-time-list__input" id="time-23:30" name="session-time" value="23:30" type="radio" disabled>
+          <label class="sessions-time-list__label" for="time-23:30">23:30</label>
+          <p class="session-time-list__prace">2000</p>
+        </li>
+      </ul>
+
+      <div class="quest-order__wrapper">
+        <p class="quest-order__your-order">Вы выбрали игру <span> 22 марта в 16:00.</span> <br> К оплате 1500 рублей</p>
+        <a href="#" class="payment-button">Перейти к оплате</a>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <ul class="social-networks">
+          <li class="social-networks__item">
+            <a href="#" class="social-networks__instagram">
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a href="#" class="social-networks__vk">
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="button-ask-question" type="button">Задать вопрос</button>
+      </div>
+    </footer>
+
+    <section class="modal-select-city">
+      <h3 class="modal-select-city__title">Ваш город:</h3>
+      <div class="close-button modal-select-city--close-button"></div>
+      <a class="button-to-locate" href="#">Определить местоположение</a>
+
+      <p class="modal-select-city__text">... или выберите вручную</p>
+      <ul class="cities-list">
+        <li class="cities-list__item">
+          <a href="#">Новосибирск</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#">Иркутск</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#">Смоленск</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#">Волгоград</a>
+        </li>
+        <li class="cities-list__item">
+          <a href="#">Комсомольск-на-Амуре</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="modal-ask-question">
+      <h3 class="modal-ask-question__title">Задайте вопрос</h3>
+      <div class="close-button modal-ask-question--close-button"></div>
+      <form class="question-form" action="#">
+        <p class="question-form__text">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
+        <legend class="question-form__name-legend question-form__name-legend--focus">Имя</legend>
+        <input class="question-form__input question-form__name-input" name="name" type="text" autofocus>
+
+        <p class="question-form__text">Чтобы вы получили ответ, оставьте ваш e-mail </p>
+        <legend class="question-form__email-legend">E-mail</legend>
+        <input class="question-form__input question-form__email-input" name="e-mail" type="email" placeholder="E-mail">
+        <p style="display: none;" class="question-form__invalid-text">Введён некорректный e-mail, попробуйте заново</p>
+
+        <p class="question-form__moving-text">Ваш вопрос:</p>
+        <textarea class="question-form__textarea" name="question" placeholder="Начните вводить ..."></textarea>
+        <button class="button button--submit-question" type="submit" disabled>Отправить вопрос</button>
+
+        <input class="question-form__checkbox" name="user-agreement" type="checkbox" id="rules">
+        <label class="question-form__label" for="rules">Я согласен с <a href="#">правилами обработки персональных данных</a> и пользовательским соглашением</label>
+      </form>
+    </section>
+
+
+
+    <script src="js/select-city-popup.js"></script>
+    <script src="js/ask-question-popup.js"></script>
+    <script src="js/open-close-menu.js"></script>
+    <script src="js/order-quest.js"></script>
+  </body>
+</html>

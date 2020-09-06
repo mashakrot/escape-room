@@ -11,6 +11,11 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #f28a0f;
+  cursor: pointer;
+
+  height: 42px;
+  padding-top: 23px;
+  text-align: center;
 }
 
 .button--to-book {
@@ -20,9 +25,12 @@
 
 .button--select-quest {
   margin-top: 66px;
+  // height: 42px;
+  // padding-top: 23px;
+  // text-align: center;
 }
 
-.button--select-quest:hover {
+.button:hover {
   background-color: #f39425;
   cursor: pointer;
 }
@@ -32,6 +40,7 @@
   width: 219px;
   height: 47px;
   font-size: 14px;
+  padding: 0;
   margin: 0 auto;
   margin-top: 30px;
   margin-left: 98px;
@@ -43,6 +52,7 @@
   width: 219px;
   height: 47px;
   font-size: 14px;
+  padding: 0;
   margin: 0 auto;
   margin-top: 30px;
   cursor: pointer;
@@ -53,6 +63,7 @@
   .button--select-quest {
     width: 225px;
     height: 55px;
+    height: 32px;
     font-size: 15px;
     margin-top: 55px;
   }
@@ -61,10 +72,12 @@
 @media (max-width: 767px) {
   .button--select-quest {
     width: 185px;
-    height: 47px;
+    height: 32px;
     font-size: 14px;
     margin: 0 auto;
     margin-top: 34px;
+    padding-top: 15px;
+    text-align: center;
   }
 
   .button--submit-question {
@@ -75,5 +88,10 @@
   .button--submit-question:disabled {
     margin-top: 30px;
     margin-left: calc(50% - 114px);
+  }
+
+  .button--to-book {
+    margin-left: 15px;
+    margin-top: 25px;
   }
 }

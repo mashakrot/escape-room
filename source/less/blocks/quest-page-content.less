@@ -3,7 +3,7 @@
   margin: 0;
   width: 50%;
   margin-left: calc(50% - 82px);
-  margin-top: 151px;
+  margin-top: 140px;
 }
 
 .quest-page-content__kind-of-quest {
@@ -12,7 +12,6 @@
   font-weight: 500;
   font-size: 14px;
   color: #f2890f;
-  margin-left: 5px;
 }
 
 .quest-page-content__title {
@@ -23,7 +22,8 @@
   font-size: 92px;
   line-height: 95%;
   color: #ffffff;
-  margin-top: 10px;
+  // margin-top: 10px;
+  margin-top: 22px;
   text-transform: uppercase;
   letter-spacing: -0.03em;
 }
@@ -34,7 +34,55 @@
   color: #ffffff;
   width: 530px;
   margin-top: 17px;
-  margin-left: 29px;
+  margin-left: 31px;
   font-size: 15px;
   line-height: 150%;
+}
+
+@media (max-width: 1023px) {
+  .quest-page-content {
+    width: auto;
+    margin-left: calc(90% - 507px);
+  }
+
+  .quest-page-content__title {
+    font-size: 76px;
+  }
+}
+
+@media (max-width: 767px) {
+  .quest-page-content {
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+    padding-bottom: 58px;
+  }
+
+  .quest-page-content__wrapper {
+    display: flex;
+    height: 369px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .quest-page-content__kind-of-quest {
+    // margin-top: 184px;
+    margin-left: 15px;
+    // margin-top: calc(50vh - 25px);
+  }
+
+  .quest-page-content__title {
+    font-size: 42px;
+    margin-left: 15px;
+    margin-top: 12px;
+    line-height: 46px;
+    letter-spacing: 0;
+  }
+
+  .quest-page-content__description {
+    margin: 0 auto;
+    width: calc(100% - 33px);
+    display: block;
+    margin-top: 28px;
+  }
 }
