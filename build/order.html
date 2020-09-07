@@ -83,15 +83,9 @@
       <p class="quest-order__text">Выбранный квест</p>
       <h1 class="quest-order__title">Маньяк</h1>
 
-      <!-- <div class="quest-order__wrapper">
-        <p class="quest-order__your-order">Вы выбрали игру <br> 22 марта в 16:00. <br> К оплате 1500 рублей</p>
-        <a href="#" class="payment-button">Перейти к оплате</a>
-      </div> -->
-
       <div class="select-date-wrapper">
-        <!-- <input class="button-select-date" type="text" id="datepicker"> -->
-        <button class="button-select-date">Выберите дату</button>
-        <p class="selected-date">22 марта</p>
+        <button class="button-select-date" tabindex="0">Выберите дату</button>
+        <p class="selected-date"></p>
       </div>
       <ul class="sessions-states">
         <li class="sessions-states__item sessions-states__item--free">– свободно</li>
@@ -171,7 +165,7 @@
       </ul>
 
       <div class="quest-order__wrapper">
-        <p class="quest-order__your-order">Вы выбрали игру <span> 22 марта в 16:00.</span> <br> К оплате 1500 рублей</p>
+        <p class="quest-order__your-order">Вы выбрали игру <span class="quest-order__your-order--date-span"> 22 марта </span> &nbsp;в&nbsp; <span class="quest-order__your-order--time-span"> 16:00.</span> <br> К оплате&nbsp;<span class="quest-order__your-order--prace-span">1500</span>&nbsp;рублей</p>
         <a href="#" class="payment-button">Перейти к оплате</a>
       </div>
     </main>
@@ -239,6 +233,9 @@
       </form>
     </section>
 
+    <section class="modal-type-date">
+        <input class="modal-type-date__input" type="date">
+    </section>
 
 
     <script src="js/select-city-popup.js"></script>

@@ -6,6 +6,7 @@
   var navigation = document.querySelector('.page-header__navigation');
   var footer = document.querySelector('.page-footer');
   var header = document.querySelector('.page-header__wrapper');
+  
 
   navigationButton.addEventListener('click', function () {
     if (!navigationButton.classList.contains('navigation-button--menu-open')) {
