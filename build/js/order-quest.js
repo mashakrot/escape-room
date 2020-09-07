@@ -50,13 +50,18 @@
     pageContent.classList.remove('page-content--date-popup-open');
     pageFooter.classList.remove('page-footer--date-popup-open');
 
-    sessionTimeList.style = 'display: flex;';
-    sessionStatesList.style = 'display: flex;';
-
     var newDate = new Date(dateInput.value);
     var day = newDate.getDate();
     var month = newDate.getMonth();
-    selectedDate.innerHTML = day + ' ' + months[month];
+
+    if (dateInput.value.length < 1) {
+      selectedDate.innerHTML = '';
+    } else {
+      sessionTimeList.style = 'display: flex;';
+      sessionStatesList.style = 'display: flex;';
+
+      selectedDate.innerHTML = day + ' ' + months[month];
+    }
 
     checkSessionAvailability();
   };
