@@ -178,8 +178,15 @@
 }
 
 @media (max-width: 767px) {
+  .choice-quests-list__wrapper {
+    width: 332px;
+    overflow: hidden;
+    position: absolute;
+    top: 197px;
+  }
+
   .choice-quests-list {
-    width: 536px;
+    width: 1751px;
     flex-wrap: inherit;
     height: 32px;
     margin-top: 41px;
@@ -191,7 +198,24 @@
     padding: 0;
     padding-right: 16px;
     font-size: 14px;
-    margin-top: 8px;
+    padding-top: 8px;
+    padding-left: 55px;
+  }
+
+  .choice-quests-list__item a {
+    height: 19px;
+  }
+
+  .choice-quests-list__item:first-child {
+    padding-left: 33px;
+  }
+
+  .choice-quests-list__item:nth-child(3n) {
+    border-right: 1px solid rgba(255,255,255,.32);
+  }
+
+  .choice-quests-list__item:last-child {
+    border-right: none;
   }
 
   .choice-quests-list__all-quests::before {
@@ -207,6 +231,7 @@
     height: 24px;
     background-size: 29px 24px;
     margin-top: -4px;
+    margin-left: -87px;
   }
 
   .choice-quests-list__horrors::before {

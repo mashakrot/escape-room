@@ -6,13 +6,32 @@
 //   background-size: 123% auto;
 // }
 
-// .body--main {
-//   background-image: url("../img/w-a-t-a-r-i-535375-unsplash.jpg");
-//   background-size: 1366px 100%;
-//   background-repeat: no-repeat;
-//   background-position: top center;
-// }
+.body--main {
+  // background: linear-gradient(272.36deg, rgba(99, 60, 15, 0) 35.91%, #c28366 65.15%, #1A140D 98.48%), radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%), url("../img/w-a-t-a-r-i-535375-unsplash.jpg");
 
+
+  background-image: url("../img/w-a-t-a-r-i-535375-unsplash.jpg");
+  background-size: 1602px auto;
+  background-repeat: no-repeat;
+  background-position: 0 calc(30% + -39px);
+  background-size: calc(100% + 236px) auto;
+}
+
+.body--maniac {
+  background-image: url("../img/mohammad-hoseini-rad-1490799-unsplash.jpg");
+  background-size: 1832px auto;
+  background-repeat: no-repeat;
+  background-position: -470px calc(25% + 23px);
+  background-size: calc(100% + 466px) auto;
+}
+
+.body--maniac-order {
+  background-image: url("../img/maniac-order.png");
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  // background-size: calc(100% + 466px) auto;
+}
 
 .body--cities-popup-open {
   background-color: #3d3333;
@@ -24,4 +43,23 @@
 
 .body--date-popup-open {
   background-color: #3d3333;
+}
+
+@media (max-width: 1023px) {
+  .body--main {
+    background-size: calc(100% + 619px) auto;
+    background-position: 0 -97px;
+  }
+}
+
+@media (max-width: 767px) {
+  .body--main {
+    background-size: 1057px auto;
+    background-position: calc(50% + 66px) -46px;
+  }
+
+  .body--maniac {
+    background-size: calc(100% + 560px) auto;
+    background-position: calc(50% - -14px) -176px;
+  }
 }
