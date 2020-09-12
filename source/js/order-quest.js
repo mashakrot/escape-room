@@ -4,15 +4,17 @@
   var months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
 
   var sessionTimeList = document.querySelector('.sessions-time-list');
-  var sessionStatesList = document.querySelector('.sessions-states');
+  // var sessionStatesList = document.querySelector('.sessions-states');
   var modalTypeDate = document.querySelector('.modal-type-date');
   var dateInput = document.querySelector('.modal-type-date__input');
+  var selectDateWrapper = document.querySelector('.select-date-wrapper');
+  var warningMessage = document.querySelector('.selecte-date-wrapper__warning-message');
   var selectedDate = document.querySelector('.selected-date');
 
   var praceList = document.querySelectorAll('.session-time-list__prace');
   Number(praceList);
   var selectDateButton = document.querySelector('.button-select-date');
-  var questOrderWrapper = document.querySelector('.quest-order__wrapper');
+  // var questOrderWrapper = document.querySelector('.quest-order__wrapper');
 
   var dateSpan = document.querySelector('.quest-order__your-order--date-span');
   var timeSpan = document.querySelector('.quest-order__your-order--time-span');
@@ -27,7 +29,7 @@
   var checkSessionAvailability = function () {
     for (var i = 0; i < sessionTimeInputs.length; i++) {
       if (sessionTimeInputs[i].checked === true) {
-        questOrderWrapper.style = 'display: flex';
+        // questOrderWrapper.style = 'display: flex';
         timeSpan.innerHTML = sessionTimeInputs[i].value;
         dateSpan.innerHTML = selectedDate.innerHTML;
         praceSpan.innerHTML = praceList[i].innerHTML;
@@ -56,11 +58,12 @@
 
     if (dateInput.value.length < 1) {
       selectedDate.innerHTML = '';
+      warningMessage.style = 'display: block';
     } else {
-      sessionTimeList.style = 'display: flex;';
-      sessionStatesList.style = 'display: flex;';
-
+      // sessionTimeList.style = 'display: flex;';
+      // sessionStatesList.style = 'display: flex;';
       selectedDate.innerHTML = day + ' ' + months[month];
+      warningMessage.style = 'display: none';
     }
 
     checkSessionAvailability();

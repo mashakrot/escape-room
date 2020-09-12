@@ -6,6 +6,7 @@
   var pageHeader = document.querySelector('.page-header__wrapper');
   var pageContent = document.querySelector('.page-content');
   var pageFooter = document.querySelector('.page-footer');
+  var pageContentWrapper = document.querySelector('.page-content__wrapper');
   var closeButton = document.querySelector('.modal-ask-question--close-button');
 
   var form = document.querySelector('.question-form');
@@ -26,6 +27,7 @@
     body.classList.add('body--question-popup-open');
     pageHeader.classList.add('page-header__wrapper--question-popup-open');
     pageContent.classList.add('page-content--question-popup-open');
+    pageContentWrapper.classList.add('page-content__wrapper--question-popup-open');
     pageFooter.classList.add('page-footer--question-popup-open');
   };
 
@@ -34,6 +36,7 @@
     body.classList.remove('body--question-popup-open');
     pageHeader.classList.remove('page-header__wrapper--question-popup-open');
     pageContent.classList.remove('page-content--question-popup-open');
+    pageContentWrapper.classList.remove('page-content__wrapper--question-popup-open');
     pageFooter.classList.remove('page-footer--question-popup-open');
   };
 

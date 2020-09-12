@@ -2,12 +2,13 @@
   display: flex;
   padding: 0;
   margin: 0 auto;
-  // width: 1080px;
   width: calc(100% - 14px);
   height: 40px;
   list-style: none;
   margin-top: 48px;
+  margin-bottom: 10px;
   justify-content: center;
+  margin-left: 0;
 }
 
 .choice-quests-list__item {
@@ -16,6 +17,11 @@
   // padding-right: 40px;
   padding-top: 10px;
   padding-right: calc(10% - 68px);
+  cursor: pointer;
+}
+
+.choice-quests-list__item:hover {
+  opacity: 0.8;
 }
 
 .choice-quests-list__item:last-child {
@@ -31,6 +37,10 @@
 
 .choice-quests-list__item--active a {
   border-bottom: 2px solid #f2890f;
+}
+
+.choice-quests-list__item--active:hover {
+  opacity: 1;
 }
 
 .choice-quests-list__all-quests {
@@ -138,9 +148,12 @@
 @media (max-width: 1023px) {
   .choice-quests-list {
     width: 550px;
+    height: auto;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 25px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .choice-quests-list__item {
@@ -182,7 +195,9 @@
     width: 332px;
     overflow: hidden;
     position: absolute;
-    top: 197px;
+    left: calc(50% - 166px);
+    top: 130px;
+    background-color: #1f1d1d;
   }
 
   .choice-quests-list {

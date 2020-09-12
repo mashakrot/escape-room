@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Заказ квеста</title>
   </head>
 
@@ -56,8 +56,9 @@
       <h1 class="quest-order__title">Маньяк</h1>
 
       <div class="select-date-wrapper">
+        <p class="selecte-date-wrapper__warning-message">Введите дату, пожалуйста.</p>
         <button class="button-select-date" tabindex="0">Выберите дату</button>
-        <p class="selected-date"></p>
+        <p class="selected-date">22 марта</p>
       </div>
       <ul class="sessions-states">
         <li class="sessions-states__item sessions-states__item--free">– свободно</li>
@@ -206,9 +207,8 @@
     </section>
 
     <section class="modal-type-date">
-        <input class="modal-type-date__input" type="date">
+        <input class="modal-type-date__input" type="date" max="2100-01-01" min="2000-01-01">
     </section>
-
 
     <script src="js/select-city-popup.js"></script>
     <script src="js/ask-question-popup.js"></script>

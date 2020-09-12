@@ -7,6 +7,7 @@
   var pageHeader = document.querySelector('.page-header__wrapper');
   var pageContent = document.querySelector('.page-content');
   var pageFooter = document.querySelector('.page-footer');
+  var pageContentWrapper = document.querySelector('.page-content__wrapper');
 
   var closeButton = document.querySelector('.modal-select-city--close-button');
 
@@ -15,6 +16,7 @@
     body.classList.add('body--cities-popup-open');
     pageHeader.classList.add('page-header__wrapper--cities-popup-open');
     pageContent.classList.add('page-content--cities-popup-open');
+    pageContentWrapper.classList.add('page-content__wrapper--cities-popup-open');
     pageFooter.classList.add('page-footer--cities-popup-open');
   };
 
@@ -23,6 +25,7 @@
     body.classList.remove('body--cities-popup-open');
     pageHeader.classList.remove('page-header__wrapper--cities-popup-open');
     pageContent.classList.remove('page-content--cities-popup-open');
+    pageContentWrapper.classList.remove('page-content__wrapper--cities-popup-open');
     pageFooter.classList.remove('page-footer--cities-popup-open');
   };
 

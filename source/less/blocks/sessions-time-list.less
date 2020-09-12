@@ -9,7 +9,7 @@
   margin-top: 50px;
   margin-left: 46px;
 
-  display: none;
+  // display: none;
 }
 
 .sessions-time-list__item {
@@ -36,6 +36,18 @@
   text-align: center;
   padding-top: 6px;
   letter-spacing: 0.05em;
+}
+
+.sessions-time-list__label:hover {
+  opacity: 0.8;
+}
+
+.sessions-time-list__input:disabled + .sessions-time-list__label:hover {
+  opacity: 1;
+}
+
+.sessions-time-list__input:checked + .sessions-time-list__label:hover {
+  opacity: 1;
 }
 
 .sessions-time-list__input:disabled + .sessions-time-list__label {
