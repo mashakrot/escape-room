@@ -5,7 +5,6 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 17px;
   background-color: #1f1d1d;
-  min-height: 768px;
 }
 a {
   text-decoration: none;
@@ -395,7 +394,7 @@ a:hover {
     margin-bottom: 64px;
   }
   .page-content__wrapper {
-    width: calc(100% - 32px);
+    width: calc(100% - 28px);
     min-width: auto;
     top: 66px;
   }
@@ -785,14 +784,12 @@ a:hover {
 }
 .body--main {
   background-image: url("../img/main-bg.jpg");
-  background-size: 1602px auto;
   background-repeat: no-repeat;
   background-position: 0 calc(30% + -39px);
   background-size: calc(100% + 236px) auto;
 }
 .body--maniac {
   background-image: url("../img/maniac-bg.jpg");
-  background-size: 1832px auto;
   background-repeat: no-repeat;
   background-position: -470px calc(25% + 23px);
   background-size: calc(100% + 466px) auto;
@@ -802,6 +799,27 @@ a:hover {
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+.body--secrets-of-mansion {
+  background-image: url("../img/secret-of-old-mansion-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: -332px -132px;
+  background-size: calc(100% + 332px) auto;
+  background-color: #060709;
+}
+.body--ritual {
+  background-image: url("../img/ritual-bg.jpg");
+  background-size: 1889px auto;
+  background-repeat: no-repeat;
+  background-position: -526px calc(50% - 1px);
+  background-size: calc(100% + 523px) auto;
+  background-color: #050f0b;
+}
+.body--fatal-experiment {
+  background-image: url("../img/fatal-experiment-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: -947px -245px;
+  background-size: calc(100% + 944px) auto;
 }
 .body--cities-popup-open {
   background: #3d3333;
@@ -820,10 +838,20 @@ a:hover {
   .body--maniac-order {
     background-size: 150% 100vh;
   }
+  .body--secrets-of-mansion {
+    background-position: -328px -137px;
+    background-size: calc(100% + 500px) auto;
+  }
+  .body--ritual {
+    background-position: -450px calc(50% - 1px);
+  }
+  .body--fatal-experiment {
+    background-position: -865px -104px;
+  }
 }
 @media (max-width: 767px) {
   .body--main {
-    background-size: 1057px auto;
+    background-size: calc(100% + 697px) auto;
     background-position: calc(50% + 66px) -46px;
   }
   .body--maniac {
@@ -833,6 +861,18 @@ a:hover {
   .body--maniac-order {
     background-image: url("../img/maniac-order-bg-mobile.png");
     background-size: 100% 100vh;
+  }
+  .body--secrets-of-mansion {
+    background-position: calc(50% + 79px) -128px;
+    background-size: calc(100% + 792px) auto;
+  }
+  .body--ritual {
+    background-size: calc(100% + 798px) auto;
+    background-position: calc(50% - -23px) -138px;
+  }
+  .body--fatal-experiment {
+    background-position: calc(50% - 166px) 0px;
+    background-size: calc(100% + 609px) auto;
   }
 }
 .modal-ask-question {
@@ -1159,6 +1199,9 @@ a:hover {
     color: #ffffff;
     margin-top: 16px;
     margin-right: 31px;
+  }
+  .navigation-button:hover {
+    opacity: 0.8;
   }
   .navigation-button::before {
     content: "";
@@ -1899,6 +1942,9 @@ a:hover {
     color: #ffffff;
     margin-left: 32px;
   }
+  .button-all-quests:hover {
+    opacity: 0.8;
+  }
   .button-all-quests::before {
     content: "";
     position: absolute;
@@ -2003,6 +2049,9 @@ a:hover {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     margin-left: 14px;
+  }
+  .quest-order__description:hover {
+    opacity: 0.8;
   }
   .quest-order__description::before {
     content: "";
@@ -2150,16 +2199,6 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 34px;
-}
-.selecte-date-wrapper__warning-message {
-  padding: 0;
-  margin: 0;
-  color: #f2890f;
-  position: absolute;
-  font-size: 12px;
-  margin-top: -18px;
-  margin-left: 47px;
-  display: none;
 }
 @media (max-width: 767px) {
   .select-date-wrapper {

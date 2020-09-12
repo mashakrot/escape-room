@@ -2,7 +2,6 @@
   // background: linear-gradient(272.36deg, rgba(99, 60, 15, 0) 35.91%, #c28366 65.15%, #1A140D 98.48%), radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%), url("../img/w-a-t-a-r-i-535375-unsplash.jpg");
 
   background-image: url("../img/main-bg.jpg");
-  background-size: 1602px auto;
   background-repeat: no-repeat;
   background-position: 0 calc(30% + -39px);
   background-size: calc(100% + 236px) auto;
@@ -10,7 +9,6 @@
 
 .body--maniac {
   background-image: url("../img/maniac-bg.jpg");
-  background-size: 1832px auto;
   background-repeat: no-repeat;
   background-position: -470px calc(25% + 23px);
   background-size: calc(100% + 466px) auto;
@@ -21,6 +19,30 @@
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.body--secrets-of-mansion {
+  background-image: url("../img/secret-of-old-mansion-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: -332px -132px;
+  background-size: calc(100% + 332px) auto;
+  background-color: #060709;
+}
+
+.body--ritual {
+  background-image: url("../img/ritual-bg.jpg");
+  background-size: 1889px auto;
+  background-repeat: no-repeat;
+  background-position: -526px calc(50% - 1px);
+  background-size: calc(100% + 523px) auto;
+  background-color: #050f0b;
+}
+
+.body--fatal-experiment {
+  background-image: url("../img/fatal-experiment-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: -947px -245px;
+  background-size: calc(100% + 944px) auto
 }
 
 .body--cities-popup-open {
@@ -44,11 +66,24 @@
   .body--maniac-order {
     background-size: 150% 100vh;
   }
+
+  .body--secrets-of-mansion {
+    background-position: -328px -137px;
+    background-size: calc(100% + 500px) auto;
+  }
+
+  .body--ritual {
+    background-position: -450px calc(50% - 1px);
+  }
+
+  .body--fatal-experiment {
+    background-position: -865px -104px;
+  }
 }
 
 @media (max-width: 767px) {
   .body--main {
-    background-size: 1057px auto;
+    background-size: calc(100% + 697px) auto;
     background-position: calc(50% + 66px) -46px;
   }
 
@@ -60,5 +95,20 @@
   .body--maniac-order {
     background-image: url("../img/maniac-order-bg-mobile.png");
     background-size: 100% 100vh;
+  }
+
+  .body--secrets-of-mansion {
+    background-position: calc(50% + 79px) -128px;
+    background-size: calc(100% + 792px) auto;
+  }
+
+  .body--ritual {
+    background-size: calc(100% + 798px) auto;
+    background-position: calc(50% - -23px) -138px;
+  }
+
+  .body--fatal-experiment {
+    background-position: calc(50% - 166px) 0px;
+    background-size: calc(100% + 609px) auto;
   }
 }
