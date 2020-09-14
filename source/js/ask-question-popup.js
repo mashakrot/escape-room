@@ -15,9 +15,9 @@
   var submitButton = document.querySelector('.button--submit-question');
 
   var nameInput = document.querySelector('.question-form__name-input');
-  var nameLegend = document.querySelector('.question-form__name-legend');
+  var nameInFocus = document.querySelector('.question-form__name-in-focus');
   var emailInput = document.querySelector('.question-form__email-input');
-  var emailLegend = document.querySelector('.question-form__email-legend');
+  var emailInFocus = document.querySelector('.question-form__email-in-focus');
   var invalidText = document.querySelector('.question-form__invalid-text');
   var questionInput = document.querySelector('.question-form__textarea');
   var text = document.querySelector('.question-form__moving-text');
@@ -85,21 +85,25 @@
     });
 
     nameInput.addEventListener('focus', function () {
-      nameLegend.classList.add('question-form__name-legend--focus');
+      nameInFocus.classList.add('question-form__name-legend--focus');
+      nameInFocus.style = 'display: block';
       nameInput.placeholder = '';
     });
     nameInput.addEventListener('blur', function () {
-      nameLegend.classList.remove('question-form__name-legend--focus');
+      nameInFocus.classList.remove('question-form__name-legend--focus');
+      nameInFocus.style = 'display: none';
       nameInput.placeholder = 'Имя';
     });
 
     emailInput.addEventListener('focus', function () {
-      emailLegend.classList.add('question-form__email-legend--focus');
+      emailInFocus.classList.add('question-form__email-legend--focus');
+      emailInFocus.style = 'display: block';
       emailInput.placeholder = '';
     });
     emailInput.addEventListener('blur', function () {
-      emailLegend.classList.remove('question-form__email-legend--focus');
-      emailInput.placeholder = 'Имя';
+      emailInFocus.classList.remove('question-form__email-legend--focus');
+      emailInFocus.style = 'display: none';
+      emailInput.placeholder = 'E-mail';
     });
 
     emailInput.addEventListener('invalid', function () {

@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Escape room</title>
   </head>
 
   <body class="body body--main">
-    <div style="display: none;">
+    <!-- <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div> -->
 
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -72,7 +72,7 @@
       </div>
     </footer>
 
-    <section class="modal-select-city">
+    <section class="modal-window modal-select-city">
       <h3 class="modal-select-city__title">Ваш город:</h3>
       <div class="close-button modal-select-city--close-button"></div>
       <a class="button-to-locate" href="#">Определить местоположение</a>
@@ -97,16 +97,16 @@
       </ul>
     </section>
 
-    <section class="modal-ask-question">
+    <section class="modal-window modal-ask-question">
       <h3 class="modal-ask-question__title">Задайте вопрос</h3>
       <div class="close-button modal-ask-question--close-button"></div>
       <form class="question-form" action="#">
         <p class="question-form__text">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
-        <legend class="question-form__name-legend question-form__name-legend--focus">Имя</legend>
+        <p class="question-form__name-in-focus" style="display: block;">Имя</p>
         <input class="question-form__input question-form__name-input" name="name" type="text" autofocus>
 
         <p class="question-form__text">Чтобы вы получили ответ, оставьте ваш e-mail </p>
-        <legend class="question-form__email-legend">E-mail</legend>
+        <p class="question-form__email-in-focus" style="display: none;">E-mail</p>
         <input class="question-form__input question-form__email-input" name="e-mail" type="email" placeholder="E-mail">
         <p style="display: none;" class="question-form__invalid-text">Введён некорректный e-mail, попробуйте заново</p>
 

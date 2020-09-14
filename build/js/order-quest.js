@@ -4,7 +4,6 @@
   var months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
 
   var sessionTimeList = document.querySelector('.sessions-time-list');
-  // var sessionStatesList = document.querySelector('.sessions-states');
   var modalTypeDate = document.querySelector('.modal-type-date');
   var dateInput = document.querySelector('.modal-type-date__input');
   var selectedDate = document.querySelector('.selected-date');
@@ -26,7 +25,6 @@
   var checkSessionAvailability = function () {
     for (var i = 0; i < sessionTimeInputs.length; i++) {
       if (sessionTimeInputs[i].checked === true) {
-        // questOrderWrapper.style = 'display: flex';
         timeSpan.innerHTML = sessionTimeInputs[i].value;
         praceSpan.innerHTML = praceList[i].innerHTML;
       }
