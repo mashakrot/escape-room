@@ -3,7 +3,7 @@
   margin: 0;
   width: 50%;
   margin-left: calc(50% - 82px);
-  margin-top: 140px;
+  // margin-top: 140px;
   margin-top: calc(25vh - 53px);
 }
 
@@ -40,7 +40,7 @@
   line-height: 150%;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: @tablet-width) {
   .quest-page-content {
     width: auto;
     margin-left: calc(90% - 507px);
@@ -51,7 +51,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: @mobile-width) {
   .quest-page-content {
     margin: 0;
     padding: 0;

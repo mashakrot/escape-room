@@ -18,7 +18,7 @@
   position: absolute;
   // margin-top: -109px;
   top: 155px;
-  margin-left: 465px;
+  // margin-left: 465px;
   margin-left: calc(20% + 190px);
   justify-content: space-between;
   width: calc(20% + 131px);
@@ -59,7 +59,7 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: @tablet-width) {
   .quest-order {
     // width: calc(100% - 210px);
     width: calc(100% - 130px);
@@ -79,7 +79,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: @mobile-width) {
   .quest-order {
     width: calc(100% - 32px);
     margin-top: 90px;

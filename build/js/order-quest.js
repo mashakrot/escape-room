@@ -8,13 +8,13 @@
   var dateInput = document.querySelector('.modal-type-date__input');
   var selectedDate = document.querySelector('.selected-date');
 
-  var praceList = document.querySelectorAll('.session-time-list__prace');
+  var praceList = document.querySelectorAll('.sessions-time-list__prace');
   Number(praceList);
   var selectDateButton = document.querySelector('.button-select-date');
 
-  var dateSpan = document.querySelector('.quest-order__your-order--date-span');
-  var timeSpan = document.querySelector('.quest-order__your-order--time-span');
-  var praceSpan = document.querySelector('.quest-order__your-order--prace-span');
+  var dateSpan = document.querySelector('.quest-order__date-span');
+  var timeSpan = document.querySelector('.quest-order__time-span');
+  var praceSpan = document.querySelector('.quest-order__prace-span');
   var sessionTimeInputs = document.querySelectorAll('.sessions-time-list__input');
 
   var body = document.querySelector('.body');

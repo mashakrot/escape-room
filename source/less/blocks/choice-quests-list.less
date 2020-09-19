@@ -145,7 +145,7 @@
   margin-left: -56px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: @tablet-width) {
   .choice-quests-list {
     width: 550px;
     height: auto;
@@ -190,7 +190,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: @mobile-width) {
   .choice-quests-list-wrapper {
     width: 332px;
     overflow: hidden;
@@ -226,7 +226,7 @@
   }
 
   .choice-quests-list__item:nth-child(3n) {
-    border-right: 1px solid rgba(255,255,255,.32);
+    border-right: 1px solid rgba(255, 255, 255, 0.32);
   }
 
   .choice-quests-list__item:last-child {

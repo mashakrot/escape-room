@@ -7,7 +7,7 @@
   var pageContent = document.querySelector('.page-content');
   var pageFooter = document.querySelector('.page-footer');
   var pageContentWrapper = document.querySelector('.page-content__wrapper');
-  var closeButton = document.querySelector('.modal-ask-question--close-button');
+  var closeButton = document.querySelector('.modal-ask-question__close-button');
 
   var form = document.querySelector('.question-form');
   var buttonAskQuestion = document.querySelector('.button-ask-question');
@@ -85,30 +85,30 @@
     });
 
     nameInput.addEventListener('focus', function () {
-      nameInFocus.classList.add('question-form__name-legend--focus');
+      // nameInFocus.classList.add('question-form__name-legend--focus');
       nameInFocus.style = 'display: block';
       nameInput.placeholder = '';
     });
     nameInput.addEventListener('blur', function () {
-      nameInFocus.classList.remove('question-form__name-legend--focus');
+      // nameInFocus.classList.remove('question-form__name-legend--focus');
       nameInFocus.style = 'display: none';
       nameInput.placeholder = 'Имя';
     });
 
     emailInput.addEventListener('focus', function () {
-      emailInFocus.classList.add('question-form__email-legend--focus');
+      // emailInFocus.classList.add('question-form__email-legend--focus');
       emailInFocus.style = 'display: block';
       emailInput.placeholder = '';
     });
     emailInput.addEventListener('blur', function () {
-      emailInFocus.classList.remove('question-form__email-legend--focus');
+      // emailInFocus.classList.remove('question-form__email-legend--focus');
       emailInFocus.style = 'display: none';
       emailInput.placeholder = 'E-mail';
     });
 
     emailInput.addEventListener('invalid', function () {
-      emailLegend.classList.add('question-form__email-legend--invalid');
-      emailInput.classList.add('question-form__email-input--invalid');
+      emailInFocus.classList.add('question-form__email--invalid');
+      // emailInput.classList.add('question-form__email-input--invalid');
       invalidText.style = 'display: block;';
       emailInput.style = 'border-color: #f2901d;';
       text.classList.add('question-form__moving-text--invalid');

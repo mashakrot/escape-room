@@ -97,30 +97,35 @@
   background-image: url("../img/vault.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #0e0a09;
 }
 
 .quests-list__item--maniac {
   background-image: url("../img/maniac.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #040506;
 }
 
 .quests-list__item--ritual {
   background-image: url("../img/ritual.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #0e100f;
 }
 
 .quests-list__item--ghost-story {
   background-image: url("../img/ghost-story.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #050503;
 }
 
 .quests-list__item--secret-of-old-mansion {
   background-image: url("../img/secret-of-old-mansion.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #0c262d;
 }
 
 .quests-list__title--secret-of-old-mansion {
@@ -131,39 +136,91 @@
   background-image: url("../img/cabin-in-forest.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #0c0f20;
 }
 
 .quests-list__item--fatal-experiment {
   background-image: url("../img/fatal-experiment.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #211514;
 }
 
 .quests-list__item--underground-2033 {
   background-image: url("../img/underground-2033.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #161914;
 }
 
 .quests-list__item--old-attic {
   background-image: url("../img/old-attic.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #b8875c;
 }
 
 .quests-list__item--last-frontier {
   background-image: url("../img/last-frontier.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #3e3a2c;
 }
 
 .quests-list__item--mars-2056 {
   background-image: url("../img/mars-2056.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #c5d0e2;
 }
 
-@media (max-width: 1023px) {
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .quests-list__item--vault {
+    background-image: url("../img/vault@2x.png");
+  }
+
+  .quests-list__item--maniac {
+    background-image: url("../img/maniac@2x.png");
+  }
+
+  .quests-list__item--ritual {
+    background-image: url("../img/ritual@2x.png");
+  }
+
+  .quests-list__item--ghost-story {
+    background-image: url("../img/ghost-story@2x.png");
+  }
+
+  .quests-list__item--secret-of-old-mansion {
+    background-image: url("../img/secret-of-old-mansion@2x.png");
+  }
+
+  .quests-list__item--cabin-in-forest {
+    background-image: url("../img/cabin-in-forest@2x.png");
+  }
+
+  .quests-list__item--fatal-experiment {
+    background-image: url("../img/fatal-experiment@2x.png");
+  }
+
+  .quests-list__item--underground-2033 {
+    background-image: url("../img/underground-2033@2x.png");
+  }
+
+  .quests-list__item--old-attic {
+    background-image: url("../img/old-attic@2x.png");
+  }
+
+  .quests-list__item--last-frontier {
+    background-image: url("../img/last-frontier@2x.png");
+  }
+
+  .quests-list__item--mars-2056 {
+    background-image: url("../img/mars-2056@2x.png");
+  }
+}
+
+@media (max-width: @tablet-width) {
   .quests-list {
     justify-content: space-between;
     width: calc(25% + 515px);
@@ -189,12 +246,10 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: @mobile-width) {
   .quests-list {
     width: 328px;
     margin: 0 auto;
-    margin-top: 25px;
-    // margin-top: 98px;
     margin-top: 220px;
   }
 

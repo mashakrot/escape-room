@@ -28,7 +28,7 @@
 .sessions-time-list__label {
   cursor: pointer;
   display: block;
-  border: 2px solid #C4C4C4;
+  border: 2px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 65px;
   width: 110px;
@@ -53,16 +53,16 @@
 .sessions-time-list__input:disabled + .sessions-time-list__label {
   border: none;
   padding-top: 8px;
-  background: linear-gradient(158.6deg, #F2890F 9.78%, #B8600F 79.81%);
+  background: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
 }
 
 .sessions-time-list__input:checked + .sessions-time-list__label {
   border: none;
   padding-top: 8px;
-  background: linear-gradient(180deg, #2CDB52 0%, #13BA19 100%);
+  background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
 }
 
-.session-time-list__prace {
+.sessions-time-list__prace {
   padding: 0;
   margin: 0;
   font-weight: 500;
@@ -72,7 +72,7 @@
   margin-left: -13px;
 }
 
-.session-time-list__prace::after {
+.sessions-time-list__prace::after {
   content: "";
   position: absolute;
   width: 8px;
@@ -85,7 +85,7 @@
   background-size: 8px 11px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: @tablet-width) {
   .sessions-time-list {
     width: 628px;
     margin: 0 auto;
@@ -94,7 +94,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: @mobile-width) {
   .sessions-time-list {
     width: calc(100% - 58px);
     margin: 0;

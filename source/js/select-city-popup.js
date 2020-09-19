@@ -9,7 +9,7 @@
   var pageFooter = document.querySelector('.page-footer');
   var pageContentWrapper = document.querySelector('.page-content__wrapper');
 
-  var closeButton = document.querySelector('.modal-select-city--close-button');
+  var closeButton = document.querySelector('.modal-select-city__close-button');
 
   var openPopup = function () {
     modalSelectCity.classList.add('modal-select-city--open');

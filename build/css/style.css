@@ -1,3 +1,352 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ffff00;
+  color: #000000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
 body {
   padding: 0;
   margin: 0;
@@ -253,7 +602,7 @@ a:hover {
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.02em;
-  margin-top: 17px;
+  margin-top: 9px;
 }
 .button-select-city::before {
   content: "";
@@ -261,7 +610,7 @@ a:hover {
   width: 16px;
   height: 21px;
   margin: auto;
-  margin-top: -5px;
+  margin-top: 3px;
   margin-left: -24px;
   background-image: url("../img/placemark.svg");
   background-repeat: no-repeat;
@@ -420,7 +769,6 @@ a:hover {
 }
 .button {
   width: 250px;
-  height: 65px;
   padding: 0;
   border-radius: 65px;
   font-weight: 800;
@@ -472,7 +820,6 @@ a:hover {
 @media (max-width: 1023px) {
   .button--select-quest {
     width: 225px;
-    height: 55px;
     height: 32px;
     font-size: 15px;
     margin-top: 55px;
@@ -599,7 +946,7 @@ a:hover {
   color: #ffffff;
   padding: 0;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   padding-top: 2px;
   border-bottom: 1px dashed #ffffff;
   height: 27px;
@@ -786,33 +1133,35 @@ a:hover {
   background-repeat: no-repeat;
   background-position: -470px calc(25% + 59px);
   background-size: calc(100% + 466px) auto;
+  background-color: #040506;
 }
 .body--maniac-order {
   background-image: url("../img/maniac-order.png");
   background-size: 100% 100vh;
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #151413;
 }
 .body--secrets-of-mansion {
   background-image: url("../img/secret-of-old-mansion-bg.jpg");
   background-repeat: no-repeat;
   background-position: -332px -132px;
   background-size: calc(100% + 332px) auto;
-  background-color: #060709;
+  background-color: #0c262d;
 }
 .body--ritual {
   background-image: url("../img/ritual-bg.jpg");
-  background-size: 1889px auto;
   background-repeat: no-repeat;
   background-position: -526px calc(25vh - 437px);
   background-size: calc(100% + 523px) auto;
-  background-color: #050f0b;
+  background-color: #0e100f;
 }
 .body--fatal-experiment {
   background-image: url("../img/fatal-experiment-bg.jpg");
   background-repeat: no-repeat;
   background-position: -947px -245px;
   background-size: calc(100% + 944px) auto;
+  background-color: #211514;
 }
 .body--cities-popup-open {
   background: #3d3333;
@@ -822,6 +1171,26 @@ a:hover {
 }
 .body--date-popup-open {
   background: #3d3333;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .body--main {
+    background-image: url("../img/main-bg@2x.jpg");
+  }
+  .body--maniac {
+    background-image: url("../img/maniac-bg@2x.jpg");
+  }
+  .body--maniac-order {
+    background-image: url("../img/maniac-order@2x.png");
+  }
+  .body--secrets-of-mansion {
+    background-image: url("../img/secret-of-old-mansion-bg@2x.jpg");
+  }
+  .body--ritual {
+    background-image: url("../img/ritual-bg@2x.jpg");
+  }
+  .body--fatal-experiment {
+    background-image: url("../img/fatal-experiment-bg@2x.jpg");
+  }
 }
 @media (max-width: 1023px) {
   .body--main {
@@ -849,7 +1218,7 @@ a:hover {
   }
   .body--maniac {
     background-size: calc(100% + 560px) auto;
-    background-position: calc(50% - -14px) -176px;
+    background-position: calc(50% + 14px) -176px;
   }
   .body--maniac-order {
     background-image: url("../img/maniac-order-bg-mobile.png");
@@ -861,11 +1230,16 @@ a:hover {
   }
   .body--ritual {
     background-size: calc(100% + 798px) auto;
-    background-position: calc(50% - -23px) -138px;
+    background-position: calc(50% + 23px) -138px;
   }
   .body--fatal-experiment {
-    background-position: calc(50% - 166px) 0px;
+    background-position: calc(50% - 166px) 0;
     background-size: calc(100% + 609px) auto;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .body--maniac-order {
+    background-image: url("../img/maniac-order-bg-mobile@2x.png");
   }
 }
 .modal-ask-question {
@@ -939,13 +1313,7 @@ a:hover {
 .question-form__moving-text--invalid {
   margin-top: 14px;
 }
-.question-form__name-legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-.question-form__name-legend--focus {
+.question-form__name-in-focus {
   width: auto;
   height: auto;
   clip: auto;
@@ -958,13 +1326,7 @@ a:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1f1d1d));
   background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 }
-.question-form__email-legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-.question-form__email-legend--focus {
+.question-form__email-in-focus {
   width: auto;
   height: auto;
   clip: auto;
@@ -977,7 +1339,7 @@ a:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1f1d1d));
   background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 }
-.question-form__email-legend--invalid {
+.question-form__email--invalid {
   width: auto;
   height: auto;
   clip: auto;
@@ -1132,14 +1494,14 @@ a:hover {
     font-size: 14px;
     display: inline;
   }
-  .question-form__name-legend--focus {
+  .question-form__name-in-focus {
     margin-left: 20px;
     margin-top: 81px;
   }
-  .question-form__email-legend--focus {
+  .question-form__email-in-focus {
     margin-top: 224px;
   }
-  .question-form__email-legend--invalid {
+  .question-form__email--invalid {
     margin-top: 224px;
   }
 }
@@ -1433,7 +1795,7 @@ a:hover {
   }
 }
 @media (max-width: 767px) {
-  .choice-quests-list__wrapper {
+  .choice-quests-list-wrapper {
     width: 332px;
     overflow: hidden;
     position: absolute;
@@ -1598,26 +1960,31 @@ a:hover {
   background-image: url("../img/vault.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #0e0a09;
 }
 .quests-list__item--maniac {
   background-image: url("../img/maniac.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #040506;
 }
 .quests-list__item--ritual {
   background-image: url("../img/ritual.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #0e100f;
 }
 .quests-list__item--ghost-story {
   background-image: url("../img/ghost-story.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #050503;
 }
 .quests-list__item--secret-of-old-mansion {
   background-image: url("../img/secret-of-old-mansion.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #0c262d;
 }
 .quests-list__title--secret-of-old-mansion {
   margin-top: 58px;
@@ -1626,31 +1993,72 @@ a:hover {
   background-image: url("../img/cabin-in-forest.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #0c0f20;
 }
 .quests-list__item--fatal-experiment {
   background-image: url("../img/fatal-experiment.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #211514;
 }
 .quests-list__item--underground-2033 {
   background-image: url("../img/underground-2033.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #161914;
 }
 .quests-list__item--old-attic {
   background-image: url("../img/old-attic.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #b8875c;
 }
 .quests-list__item--last-frontier {
   background-image: url("../img/last-frontier.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #3e3a2c;
 }
 .quests-list__item--mars-2056 {
   background-image: url("../img/mars-2056.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: #c5d0e2;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .quests-list__item--vault {
+    background-image: url("../img/vault@2x.png");
+  }
+  .quests-list__item--maniac {
+    background-image: url("../img/maniac@2x.png");
+  }
+  .quests-list__item--ritual {
+    background-image: url("../img/ritual@2x.png");
+  }
+  .quests-list__item--ghost-story {
+    background-image: url("../img/ghost-story@2x.png");
+  }
+  .quests-list__item--secret-of-old-mansion {
+    background-image: url("../img/secret-of-old-mansion@2x.png");
+  }
+  .quests-list__item--cabin-in-forest {
+    background-image: url("../img/cabin-in-forest@2x.png");
+  }
+  .quests-list__item--fatal-experiment {
+    background-image: url("../img/fatal-experiment@2x.png");
+  }
+  .quests-list__item--underground-2033 {
+    background-image: url("../img/underground-2033@2x.png");
+  }
+  .quests-list__item--old-attic {
+    background-image: url("../img/old-attic@2x.png");
+  }
+  .quests-list__item--last-frontier {
+    background-image: url("../img/last-frontier@2x.png");
+  }
+  .quests-list__item--mars-2056 {
+    background-image: url("../img/mars-2056@2x.png");
+  }
 }
 @media (max-width: 1023px) {
   .quests-list {
@@ -1678,7 +2086,6 @@ a:hover {
   .quests-list {
     width: 328px;
     margin: 0 auto;
-    margin-top: 25px;
     margin-top: 220px;
   }
   .quests-list__item {
@@ -1742,7 +2149,6 @@ a:hover {
   margin: 0;
   width: 50%;
   margin-left: calc(50% - 82px);
-  margin-top: 140px;
   margin-top: calc(25vh - 53px);
 }
 .quest-page-content__kind-of-quest {
@@ -1961,7 +2367,6 @@ a:hover {
   display: flex;
   position: absolute;
   top: 155px;
-  margin-left: 465px;
   margin-left: calc(20% + 190px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -2225,7 +2630,7 @@ a:hover {
   position: absolute;
   width: 15px;
   height: 15px;
-  background: linear-gradient(158.6deg, #F2890F 9.78%, #B8600F 79.81%);
+  background: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
@@ -2236,8 +2641,8 @@ a:hover {
   position: absolute;
   width: 15px;
   height: 15px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2CDB52), to(#13BA19));
-  background: linear-gradient(180deg, #2CDB52 0%, #13BA19 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2cdb52), to(#13ba19));
+  background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
@@ -2285,7 +2690,7 @@ a:hover {
 .sessions-time-list__label {
   cursor: pointer;
   display: block;
-  border: 2px solid #C4C4C4;
+  border: 2px solid #c4c4c4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 65px;
@@ -2307,15 +2712,15 @@ a:hover {
 .sessions-time-list__input:disabled + .sessions-time-list__label {
   border: none;
   padding-top: 8px;
-  background: linear-gradient(158.6deg, #F2890F 9.78%, #B8600F 79.81%);
+  background: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
 }
 .sessions-time-list__input:checked + .sessions-time-list__label {
   border: none;
   padding-top: 8px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2CDB52), to(#13BA19));
-  background: linear-gradient(180deg, #2CDB52 0%, #13BA19 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2cdb52), to(#13ba19));
+  background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
 }
-.session-time-list__prace {
+.sessions-time-list__prace {
   padding: 0;
   margin: 0;
   font-weight: 500;
@@ -2324,7 +2729,7 @@ a:hover {
   padding-top: 4px;
   margin-left: -13px;
 }
-.session-time-list__prace::after {
+.sessions-time-list__prace::after {
   content: "";
   position: absolute;
   width: 8px;
@@ -2390,6 +2795,30 @@ a:hover {
   border-radius: 3px;
   left: calc(50% - 240px);
   z-index: 80;
+}
+@media (max-width: 1023px) {
+  .modal-window {
+    width: 460px;
+    left: calc(50% - 230px);
+  }
+}
+@media (max-width: 767px) {
+  .modal-window {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .choice-quests-list-wrapper {
+    width: 332px;
+    overflow: hidden;
+    position: absolute;
+    left: calc(50% - 166px);
+    top: 130px;
+    background-color: #1f1d1d;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
