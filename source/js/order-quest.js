@@ -17,10 +17,11 @@
   var praceSpan = document.querySelector('.quest-order__prace-span');
   var sessionTimeInputs = document.querySelectorAll('.sessions-time-list__input');
 
-  var body = document.querySelector('.body');
+  var body = document.querySelector('.body-wrapper');
   var pageHeader = document.querySelector('.page-header__wrapper');
   var pageContent = document.querySelector('.page-content');
   var pageFooter = document.querySelector('.page-footer');
+  var pageContentWrapper = document.querySelector('.page-content__wrapper');
 
   var checkSessionAvailability = function () {
     for (var i = 0; i < sessionTimeInputs.length; i++) {
@@ -46,19 +47,21 @@
 
   var openPopup = function () {
     modalTypeDate.classList.add('modal-type-date--open');
-    body.classList.add('body--date-popup-open');
+    body.classList.add('body-wrapper--date-popup-open');
     pageHeader.classList.add('page-header__wrapper--date-popup-open');
     pageContent.classList.add('page-content--date-popup-open');
     pageFooter.classList.add('page-footer--date-popup-open');
+    pageContentWrapper.classList.add('page-content__wrapper--cities-popup-open');
   };
 
   var closePopup = function () {
     if (dateInput.checkValidity()) {
       modalTypeDate.classList.remove('modal-type-date--open');
-      body.classList.remove('body--date-popup-open');
+      body.classList.remove('body-wrapper--date-popup-open');
       pageHeader.classList.remove('page-header__wrapper--date-popup-open');
       pageContent.classList.remove('page-content--date-popup-open');
       pageFooter.classList.remove('page-footer--date-popup-open');
+      pageContentWrapper.classList.remove('page-content__wrapper--cities-popup-open');
 
       setDate();
       checkSessionAvailability();

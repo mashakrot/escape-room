@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  var body = document.querySelector('.body');
+  var body = document.querySelector('.body-wrapper');
   var buttonSelectCity = document.querySelector('.button-select-city');
   var modalSelectCity = document.querySelector('.modal-select-city');
   var pageHeader = document.querySelector('.page-header__wrapper');
@@ -13,7 +13,7 @@
 
   var openPopup = function () {
     modalSelectCity.classList.add('modal-select-city--open');
-    body.classList.add('body--cities-popup-open');
+    body.classList.add('body-wrapper--cities-popup-open');
     pageHeader.classList.add('page-header__wrapper--cities-popup-open');
     pageContent.classList.add('page-content--cities-popup-open');
     pageContentWrapper.classList.add('page-content__wrapper--cities-popup-open');
@@ -22,7 +22,7 @@
 
   var closePopup = function () {
     modalSelectCity.classList.remove('modal-select-city--open');
-    body.classList.remove('body--cities-popup-open');
+    body.classList.remove('body-wrapper--cities-popup-open');
     pageHeader.classList.remove('page-header__wrapper--cities-popup-open');
     pageContent.classList.remove('page-content--cities-popup-open');
     pageContentWrapper.classList.remove('page-content__wrapper--cities-popup-open');

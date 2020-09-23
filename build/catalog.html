@@ -11,265 +11,267 @@
     <title>Выбрать квест</title>
   </head>
 
-  <body class="body">
-    <!-- <div style="display: none;">
-      <include src="build/img/sprite.svg"></include>
-    </div> -->
+  <body>
+    <div class="body-wrapper">
+      <!-- <div style="display: none;">
+        <include src="build/img/sprite.svg"></include>
+      </div> -->
 
-    <header class="page-header">
-      <div class="page-header__wrapper page-header__wrapper--painted">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo" href="main.html" alt="Логотип Escape room">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-              <img src="img/logo-desktop.svg" alt="Логотип Escape room" width="134" height="52">
-            </picture>
-          </a>
-          <div class="navigation-button">Меню</div>
-        </div>
-        <nav class="page-header__navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list__item navigation-list__item--active">
-              <a href="#">Квесты</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">Новичкам</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">Отзывы</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">Акции</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-          <div class="nav-wrapper">
-            <button class="button-select-city" tabindex="0" type="button">Новосибирск</button>
-            <a class="contact-phone" href="8(383)2840160">8 (383) 284 01 60</a>
+      <header class="page-header">
+        <div class="page-header__wrapper page-header__wrapper--painted">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo" href="main.html" alt="Логотип Escape room">
+              <picture>
+                <!-- 96px 36px-->
+                <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+                <!-- 134px 52px-->
+                <img src="img/logo-desktop.svg" alt="Логотип Escape room" width="134" height="52">
+              </picture>
+            </a>
+            <div class="navigation-button">Меню</div>
           </div>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-content">
-      <div class="page-content__wrapper">
-        <p class="quests-place">квесты в Новосибирске</p>
-        <h1 class="catalog-title">Выберите тематику</h1>
-        <div class="choice-quests-list-wrapper">
-          <ul class="choice-quests-list">
-            <li class="choice-quests-list__item choice-quests-list__all-quests choice-quests-list__item--active">
-              <a href="#">Все квесты</a>
-            </li>
-            <li class="choice-quests-list__item choice-quests-list__adventures">
-              <a href="#">Приключения</a>
-            </li>
-            <li class="choice-quests-list__item choice-quests-list__horrors">
-              <a href="#">Ужасы</a>
-            </li>
-            <li class="choice-quests-list__item choice-quests-list__mysticism">
-              <a href="#">Мистика</a>
-            </li>
-            <li class="choice-quests-list__item choice-quests-list__detective">
-              <a href="#">Детектив</a>
-            </li>
-            <li class="choice-quests-list__item choice-quests-list__sci-fi">
-              <a href="#">Sci-fi</a>
-            </li>
-          </ul>
+          <nav class="page-header__navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list__item navigation-list__item--active">
+                <a href="#">Квесты</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#">Новичкам</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#">Отзывы</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#">Акции</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="nav-wrapper">
+              <button class="button-select-city" tabindex="0" type="button">Новосибирск</button>
+              <a class="contact-phone" href="8(383)2840160">8 (383) 284 01 60</a>
+            </div>
+          </nav>
         </div>
-      </div>
-      <ul class="quests-list">
-        <li class="quests-list__item quests-list__item--vault">
-          <a href="#">
-            <div class="quests-list__hit">Хит</div>
-            <h3 class="quests-list__title">Склеп</h3>
-            <p class="quests-list__address">пр. Ленина, 37</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">2-5 чел</li>
-              <li class="quest-features__level">сложный</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--maniac">
-          <a href="maniac.html">
-            <div class="quests-list__hit">Хит</div>
-            <h3 class="quests-list__title">Маньяк</h3>
-            <p class="quests-list__address">Верхнетецкая, 32</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">3-6 чел</li>
-              <li class="quest-features__level">средний</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--ritual">
-          <a href="ritual.html">
-            <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
-            <h3 class="quests-list__title">Ритуал</h3>
-            <p class="quests-list__address">пр. Ленина, 37</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">3-5 чел</li>
-              <li class="quest-features__level">сложный</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--ghost-story">
-          <a href="#">
-            <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
-            <h3 class="quests-list__title">История призраков</h3>
-            <p class="quests-list__address">Новослободская, 2а</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">5-6 чел</li>
-              <li class="quest-features__level">легкий</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--secret-of-old-mansion">
-          <a href="secret-of-old-mansion.html">
-            <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
-            <h3 class="quests-list__title quests-list__title--secret-of-old-mansion">Тайны старого <br> особняка</h3>
-            <p class="quests-list__address">прю Ленина, 37</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">2-5 чел</li>
-              <li class="quest-features__level">легкий</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--cabin-in-forest">
-          <a href="#">
-            <div class="quests-list__hit">Хит</div>
-            <h3 class="quests-list__title">Хижина в лесу</h3>
-            <p class="quests-list__address">Верхнетецкая, 32</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">4-7 чел</li>
-              <li class="quest-features__level">средний</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--fatal-experiment">
-          <a href="fatal-experiment.html">
-            <div class="quests-list__hit">Хит</div>
-            <h3 class="quests-list__title">Фатальный эксперимент</h3>
-            <p class="quests-list__address">Ворхнетецкая, 32</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">5-8 чел</li>
-              <li class="quest-features__level">сложный</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--underground-2033">
-          <a href="#">
-            <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
-            <h3 class="quests-list__title">Метро 2033</h3>
-            <p class="quests-list__address">Новослободская, 2а</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">6-8 чел</li>
-              <li class="quest-features__level">средний</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--old-attic">
-          <a href="#">
-            <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
-            <h3 class="quests-list__title">Старый чердак</h3>
-            <p class="quests-list__address">Новослободская, 2а</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">2-3 чел</li>
-              <li class="quest-features__level">легкий</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--last-frontier">
-          <a href="#">
-            <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
-            <h3 class="quests-list__title">Последний рубеж</h3>
-            <p class="quests-list__address">Верхнетецкая, 32</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">4-7 чел</li>
-              <li class="quest-features__level">средний</li>
-            </ul>
-          </a>
-        </li>
-        <li class="quests-list__item quests-list__item--mars-2056">
-          <a href="#">
-            <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
-            <h3 class="quests-list__title">Марс-2056</h3>
-            <p class="quests-list__address">пр. Ленина, 37</p>
-            <ul class="quest-features">
-              <li class="quest-features__number-of-people">2-4 чел</li>
-              <li class="quest-features__level">легкий</li>
-            </ul>
-          </a>
-        </li>
-      </ul>
-    </main>
+      </header>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <ul class="social-networks">
-          <li class="social-networks__item">
-            <a href="#" class="social-networks__instagram">
+      <main class="page-content">
+        <div class="page-content__wrapper">
+          <p class="quests-place">квесты в Новосибирске</p>
+          <h1 class="catalog-title">Выберите тематику</h1>
+          <div class="choice-quests-list-wrapper">
+            <ul class="choice-quests-list">
+              <li class="choice-quests-list__item choice-quests-list__all-quests choice-quests-list__item--active">
+                <a href="#">Все квесты</a>
+              </li>
+              <li class="choice-quests-list__item choice-quests-list__adventures">
+                <a href="#">Приключения</a>
+              </li>
+              <li class="choice-quests-list__item choice-quests-list__horrors">
+                <a href="#">Ужасы</a>
+              </li>
+              <li class="choice-quests-list__item choice-quests-list__mysticism">
+                <a href="#">Мистика</a>
+              </li>
+              <li class="choice-quests-list__item choice-quests-list__detective">
+                <a href="#">Детектив</a>
+              </li>
+              <li class="choice-quests-list__item choice-quests-list__sci-fi">
+                <a href="#">Sci-fi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="quests-list">
+          <li class="quests-list__item quests-list__item--vault">
+            <a href="#">
+              <div class="quests-list__hit">Хит</div>
+              <h3 class="quests-list__title">Склеп</h3>
+              <p class="quests-list__address">пр. Ленина, 37</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">2-5 чел</li>
+                <li class="quest-features__level">сложный</li>
+              </ul>
             </a>
           </li>
-          <li class="social-networks__item">
-            <a href="#" class="social-networks__vk">
+          <li class="quests-list__item quests-list__item--maniac">
+            <a href="maniac.html">
+              <div class="quests-list__hit">Хит</div>
+              <h3 class="quests-list__title">Маньяк</h3>
+              <p class="quests-list__address">Верхнетецкая, 32</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">3-6 чел</li>
+                <li class="quest-features__level">средний</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--ritual">
+            <a href="ritual.html">
+              <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
+              <h3 class="quests-list__title">Ритуал</h3>
+              <p class="quests-list__address">пр. Ленина, 37</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">3-5 чел</li>
+                <li class="quest-features__level">сложный</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--ghost-story">
+            <a href="#">
+              <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
+              <h3 class="quests-list__title">История призраков</h3>
+              <p class="quests-list__address">Новослободская, 2а</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">5-6 чел</li>
+                <li class="quest-features__level">легкий</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--secret-of-old-mansion">
+            <a href="secret-of-old-mansion.html">
+              <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
+              <h3 class="quests-list__title quests-list__title--secret-of-old-mansion">Тайны старого <br> особняка</h3>
+              <p class="quests-list__address">прю Ленина, 37</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">2-5 чел</li>
+                <li class="quest-features__level">легкий</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--cabin-in-forest">
+            <a href="#">
+              <div class="quests-list__hit">Хит</div>
+              <h3 class="quests-list__title">Хижина в лесу</h3>
+              <p class="quests-list__address">Верхнетецкая, 32</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">4-7 чел</li>
+                <li class="quest-features__level">средний</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--fatal-experiment">
+            <a href="fatal-experiment.html">
+              <div class="quests-list__hit">Хит</div>
+              <h3 class="quests-list__title">Фатальный эксперимент</h3>
+              <p class="quests-list__address">Ворхнетецкая, 32</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">5-8 чел</li>
+                <li class="quest-features__level">сложный</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--underground-2033">
+            <a href="#">
+              <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
+              <h3 class="quests-list__title">Метро 2033</h3>
+              <p class="quests-list__address">Новослободская, 2а</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">6-8 чел</li>
+                <li class="quest-features__level">средний</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--old-attic">
+            <a href="#">
+              <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
+              <h3 class="quests-list__title">Старый чердак</h3>
+              <p class="quests-list__address">Новослободская, 2а</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">2-3 чел</li>
+                <li class="quest-features__level">легкий</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--last-frontier">
+            <a href="#">
+              <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
+              <h3 class="quests-list__title">Последний рубеж</h3>
+              <p class="quests-list__address">Верхнетецкая, 32</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">4-7 чел</li>
+                <li class="quest-features__level">средний</li>
+              </ul>
+            </a>
+          </li>
+          <li class="quests-list__item quests-list__item--mars-2056">
+            <a href="#">
+              <div class="quests-list__hit" style="visibility: hidden;">Хит</div>
+              <h3 class="quests-list__title">Марс-2056</h3>
+              <p class="quests-list__address">пр. Ленина, 37</p>
+              <ul class="quest-features">
+                <li class="quest-features__number-of-people">2-4 чел</li>
+                <li class="quest-features__level">легкий</li>
+              </ul>
             </a>
           </li>
         </ul>
-        <button class="button-ask-question" type="button">Задать вопрос</button>
-      </div>
-    </footer>
+      </main>
 
-    <section class="modal-window modal-select-city">
-      <h3 class="modal-select-city__title">Ваш город:</h3>
-      <div class="close-button modal-select-city__close-button"></div>
-      <a class="button-to-locate" href="#">Определить местоположение</a>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <ul class="social-networks">
+            <li class="social-networks__item">
+              <a href="#" class="social-networks__instagram">
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a href="#" class="social-networks__vk">
+              </a>
+            </li>
+          </ul>
+          <button class="button-ask-question" type="button">Задать вопрос</button>
+        </div>
+      </footer>
 
-      <p class="modal-select-city__text">... или выберите вручную</p>
-      <ul class="cities-list">
-        <li class="cities-list__item">
-          <a href="#">Новосибирск</a>
-        </li>
-        <li class="cities-list__item">
-          <a href="#">Иркутск</a>
-        </li>
-        <li class="cities-list__item">
-          <a href="#">Смоленск</a>
-        </li>
-        <li class="cities-list__item">
-          <a href="#">Волгоград</a>
-        </li>
-        <li class="cities-list__item">
-          <a href="#">Комсомольск-на-Амуре</a>
-        </li>
-      </ul>
-    </section>
+      <section class="modal-window modal-select-city">
+        <h3 class="modal-select-city__title">Ваш город:</h3>
+        <div class="close-button modal-select-city__close-button"></div>
+        <a class="button-to-locate" href="#">Определить местоположение</a>
 
-    <section class="modal-window modal-ask-question">
-      <h3 class="modal-ask-question__title">Задайте вопрос</h3>
-      <div class="close-button modal-ask-question__close-button"></div>
-      <form class="question-form" action="#">
-        <p class="question-form__text">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
-        <p class="question-form__name-in-focus" style="display: block;">Имя</p>
-        <input class="question-form__input question-form__name-input" name="name" type="text" autofocus="">
+        <p class="modal-select-city__text">... или выберите вручную</p>
+        <ul class="cities-list">
+          <li class="cities-list__item">
+            <a href="#">Новосибирск</a>
+          </li>
+          <li class="cities-list__item">
+            <a href="#">Иркутск</a>
+          </li>
+          <li class="cities-list__item">
+            <a href="#">Смоленск</a>
+          </li>
+          <li class="cities-list__item">
+            <a href="#">Волгоград</a>
+          </li>
+          <li class="cities-list__item">
+            <a href="#">Комсомольск-на-Амуре</a>
+          </li>
+        </ul>
+      </section>
 
-        <p class="question-form__text">Чтобы вы получили ответ, оставьте ваш e-mail </p>
-        <p class="question-form__email-in-focus" style="display: none;">E-mail</p>
-        <input class="question-form__input question-form__email-input" name="e-mail" type="email" placeholder="E-mail">
-        <p style="display: none;" class="question-form__invalid-text">Введён некорректный e-mail, попробуйте заново</p>
+      <section class="modal-window modal-ask-question">
+        <h3 class="modal-ask-question__title">Задайте вопрос</h3>
+        <div class="close-button modal-ask-question__close-button"></div>
+        <form class="question-form" action="#">
+          <p class="question-form__text">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
+          <p class="question-form__name-in-focus" style="display: block;">Имя</p>
+          <input name="name" type="text" autofocus="">
 
-        <p class="question-form__moving-text">Ваш вопрос:</p>
-        <textarea class="question-form__textarea" name="question" placeholder="Начните вводить ..."></textarea>
-        <button class="button button--submit-question" type="submit" disabled="">Отправить вопрос</button>
+          <p class="question-form__text">Чтобы вы получили ответ, оставьте ваш e-mail </p>
+          <p class="question-form__email-in-focus" style="display: none;">E-mail</p>
+          <input name="e-mail" type="email" placeholder="E-mail">
+          <p style="display: none;" class="question-form__invalid-text">Введён некорректный e-mail, попробуйте заново</p>
 
-        <input class="question-form__checkbox" name="user-agreement" type="checkbox" id="rules">
-        <label class="question-form__label" for="rules">Я согласен с <a href="#">правилами обработки персональных данных</a> и пользовательским соглашением</label>
-      </form>
-    </section>
+          <p class="question-form__moving-text">Ваш вопрос:</p>
+          <textarea name="question" placeholder="Начните вводить ..."></textarea>
+          <button class="button button--submit-question" type="submit" disabled="">Отправить вопрос</button>
 
-    <script src="js/select-city-popup.js"></script>
-    <script src="js/ask-question-popup.js"></script>
-    <script src="js/open-close-menu.js"></script>
+          <input class="question-form__checkbox" name="user-agreement" type="checkbox" id="rules">
+          <label class="question-form__label" for="rules">Я согласен с <a href="#">правилами обработки персональных данных</a> и пользовательским соглашением</label>
+        </form>
+      </section>
+
+      <script src="js/main.js"></script>
+    </div>
   </body>
 </html>

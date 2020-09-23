@@ -2,7 +2,7 @@
 
 (function () {
   var popup = document.querySelector('.modal-ask-question');
-  var body = document.querySelector('.body');
+  var body = document.querySelector('.body-wrapper');
   var pageHeader = document.querySelector('.page-header__wrapper');
   var pageContent = document.querySelector('.page-content');
   var pageFooter = document.querySelector('.page-footer');
@@ -14,17 +14,17 @@
   var checkbox = document.querySelector('.question-form__checkbox');
   var submitButton = document.querySelector('.button--submit-question');
 
-  var nameInput = document.querySelector('.question-form__name-input');
+  var nameInput = document.querySelector('input[name="name"]');
   var nameInFocus = document.querySelector('.question-form__name-in-focus');
-  var emailInput = document.querySelector('.question-form__email-input');
+  var emailInput = document.querySelector('input[name="e-mail"]');
   var emailInFocus = document.querySelector('.question-form__email-in-focus');
   var invalidText = document.querySelector('.question-form__invalid-text');
-  var questionInput = document.querySelector('.question-form__textarea');
+  var questionInput = document.querySelector('textarea[name="question"]');
   var text = document.querySelector('.question-form__moving-text');
 
   var openPopup = function () {
     popup.classList.add('modal-ask-question--open');
-    body.classList.add('body--question-popup-open');
+    body.classList.add('body-wrapper--question-popup-open');
     pageHeader.classList.add('page-header__wrapper--question-popup-open');
     pageContent.classList.add('page-content--question-popup-open');
     pageContentWrapper.classList.add('page-content__wrapper--question-popup-open');
@@ -33,7 +33,7 @@
 
   var closePopup = function () {
     popup.classList.remove('modal-ask-question--open');
-    body.classList.remove('body--question-popup-open');
+    body.classList.remove('body-wrapper--question-popup-open');
     pageHeader.classList.remove('page-header__wrapper--question-popup-open');
     pageContent.classList.remove('page-content--question-popup-open');
     pageContentWrapper.classList.remove('page-content__wrapper--question-popup-open');
@@ -85,30 +85,25 @@
     });
 
     nameInput.addEventListener('focus', function () {
-      // nameInFocus.classList.add('question-form__name-legend--focus');
       nameInFocus.style = 'display: block';
       nameInput.placeholder = '';
     });
     nameInput.addEventListener('blur', function () {
-      // nameInFocus.classList.remove('question-form__name-legend--focus');
       nameInFocus.style = 'display: none';
       nameInput.placeholder = 'Имя';
     });
 
     emailInput.addEventListener('focus', function () {
-      // emailInFocus.classList.add('question-form__email-legend--focus');
       emailInFocus.style = 'display: block';
       emailInput.placeholder = '';
     });
     emailInput.addEventListener('blur', function () {
-      // emailInFocus.classList.remove('question-form__email-legend--focus');
       emailInFocus.style = 'display: none';
       emailInput.placeholder = 'E-mail';
     });
 
     emailInput.addEventListener('invalid', function () {
       emailInFocus.classList.add('question-form__email--invalid');
-      // emailInput.classList.add('question-form__email-input--invalid');
       invalidText.style = 'display: block;';
       emailInput.style = 'border-color: #f2901d;';
       text.classList.add('question-form__moving-text--invalid');

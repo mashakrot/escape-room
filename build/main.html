@@ -7,120 +7,122 @@
     <title>Escape room</title>
   </head>
 
-  <body class="body body--main">
-    <!-- <div style="display: none;">
-      <include src="build/img/sprite.svg"></include>
-    </div> -->
+  <body>
+    <div class="body-wrapper body-wrapper__main">
+      <!-- <div style="display: none;">
+        <include src="build/img/sprite.svg"></include>
+      </div> -->
 
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-              <img src="img/logo-desktop.svg" alt="Логотип Escape room" width="134" height="52">
-            </picture>
-          </a>
-          <div class="navigation-button">Меню</div>
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo">
+              <picture>
+                <!-- 96px 36px-->
+                <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+                <!-- 134px 52px-->
+                <img src="img/logo-desktop.svg" alt="Логотип Escape room" width="134" height="52">
+              </picture>
+            </a>
+            <div class="navigation-button">Меню</div>
+          </div>
+          <nav class="page-header__navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a href="catalog.html">Квесты</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#">Новичкам</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#">Отзывы</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#">Акции</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="nav-wrapper">
+              <button class="button-select-city" tabindex="0" type="button">Новосибирск</button>
+              <a class="contact-phone" href="8(383)2840160">8 (383) 284 01 60</a>
+            </div>
+          </nav>
         </div>
-        <nav class="page-header__navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list__item">
-              <a href="catalog.html">Квесты</a>
+      </header>
+
+      <main class="page-content">
+        <h1 class="page-title">Лучшие квесты <br> в Новосибирске</h1>
+        <p class="page-promo-text">Надоело проводить свободное время лёжа на диване? <br> Игровые площадки questroom на целый час погружают <br> вас в мир незабываемых авантюр. Ищите подсказки, <br> решайте головоломки и находите выход из комнаты!</p>
+        <a class="button button--select-quest" href="catalog.html">Выбрать квест</a>
+        <!-- <button class="button button--select-quest">Выбрать квест</button> -->
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <ul class="social-networks">
+            <li class="social-networks__item">
+              <a href="#" class="social-networks__instagram">
+              </a>
             </li>
-            <li class="navigation-list__item">
-              <a href="#">Новичкам</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">Отзывы</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">Акции</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#">Контакты</a>
+            <li class="social-networks__item">
+              <a href="#" class="social-networks__vk">
+              </a>
             </li>
           </ul>
-          <div class="nav-wrapper">
-            <button class="button-select-city" tabindex="0" type="button">Новосибирск</button>
-            <a class="contact-phone" href="8(383)2840160">8 (383) 284 01 60</a>
-          </div>
-        </nav>
-      </div>
-    </header>
+          <button class="button-ask-question" type="button">Задать вопрос</button>
+        </div>
+      </footer>
 
-    <main class="page-content">
-      <h1 class="page-title">Лучшие квесты <br> в Новосибирске</h1>
-      <p class="page-promo-text">Надоело проводить свободное время лёжа на диване? <br> Игровые площадки questroom на целый час погружают <br> вас в мир незабываемых авантюр. Ищите подсказки, <br> решайте головоломки и находите выход из комнаты!</p>
-      <a class="button button--select-quest" href="catalog.html">Выбрать квест</a>
-      <!-- <button class="button button--select-quest">Выбрать квест</button> -->
-    </main>
+      <section class="modal-window modal-select-city">
+        <h3 class="modal-select-city__title">Ваш город:</h3>
+        <div class="close-button modal-select-city__close-button"></div>
+        <a class="button-to-locate" href="#">Определить местоположение</a>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <ul class="social-networks">
-          <li class="social-networks__item">
-            <a href="#" class="social-networks__instagram">
-            </a>
+        <p class="modal-select-city__text">... или выберите вручную</p>
+        <ul class="cities-list">
+          <li class="cities-list__item">
+            <a href="#">Новосибирск</a>
           </li>
-          <li class="social-networks__item">
-            <a href="#" class="social-networks__vk">
-            </a>
+          <li class="cities-list__item">
+            <a href="#">Иркутск</a>
+          </li>
+          <li class="cities-list__item">
+            <a href="#">Смоленск</a>
+          </li>
+          <li class="cities-list__item">
+            <a href="#">Волгоград</a>
+          </li>
+          <li class="cities-list__item">
+            <a href="#">Комсомольск-на-Амуре</a>
           </li>
         </ul>
-        <button class="button-ask-question" type="button">Задать вопрос</button>
-      </div>
-    </footer>
+      </section>
 
-    <section class="modal-window modal-select-city">
-      <h3 class="modal-select-city__title">Ваш город:</h3>
-      <div class="close-button modal-select-city__close-button"></div>
-      <a class="button-to-locate" href="#">Определить местоположение</a>
+      <section class="modal-window modal-ask-question">
+        <h3 class="modal-ask-question__title">Задайте вопрос</h3>
+        <div class="close-button modal-ask-question__close-button"></div>
+        <form class="question-form" action="#">
+          <p class="question-form__text">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
+          <p class="question-form__name-in-focus" style="display: block;">Имя</p>
+          <input name="name" type="text" autofocus="">
 
-      <p class="modal-select-city__text">... или выберите вручную</p>
-      <ul class="cities-list">
-        <li class="cities-list__item">
-          <a href="#">Новосибирск</a>
-        </li>
-        <li class="cities-list__item">
-          <a href="#">Иркутск</a>
-        </li>
-        <li class="cities-list__item">
-          <a href="#">Смоленск</a>
-        </li>
-        <li class="cities-list__item">
-          <a href="#">Волгоград</a>
-        </li>
-        <li class="cities-list__item">
-          <a href="#">Комсомольск-на-Амуре</a>
-        </li>
-      </ul>
-    </section>
+          <p class="question-form__text">Чтобы вы получили ответ, оставьте ваш e-mail </p>
+          <p class="question-form__email-in-focus" style="display: none;">E-mail</p>
+          <input name="e-mail" type="email" placeholder="E-mail">
+          <p style="display: none;" class="question-form__invalid-text">Введён некорректный e-mail, попробуйте заново</p>
 
-    <section class="modal-window modal-ask-question">
-      <h3 class="modal-ask-question__title">Задайте вопрос</h3>
-      <div class="close-button modal-ask-question__close-button"></div>
-      <form class="question-form" action="#">
-        <p class="question-form__text">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
-        <p class="question-form__name-in-focus" style="display: block;">Имя</p>
-        <input class="question-form__input question-form__name-input" name="name" type="text" autofocus="">
+          <p class="question-form__moving-text">Ваш вопрос:</p>
+          <textarea name="question" placeholder="Начните вводить ..."></textarea>
+          <button class="button button--submit-question" type="submit" disabled="">Отправить вопрос</button>
 
-        <p class="question-form__text">Чтобы вы получили ответ, оставьте ваш e-mail </p>
-        <p class="question-form__email-in-focus" style="display: none;">E-mail</p>
-        <input class="question-form__input question-form__email-input" name="e-mail" type="email" placeholder="E-mail">
-        <p style="display: none;" class="question-form__invalid-text">Введён некорректный e-mail, попробуйте заново</p>
+          <input class="question-form__checkbox" name="user-agreement" type="checkbox" id="rules">
+          <label class="question-form__label" for="rules">Я согласен с <a href="#">правилами обработки персональных данных</a> и пользовательским соглашением</label>
+        </form>
+      </section>
 
-        <p class="question-form__moving-text">Ваш вопрос:</p>
-        <textarea class="question-form__textarea" name="question" placeholder="Начните вводить ..."></textarea>
-        <button class="button button--submit-question" type="submit" disabled="">Отправить вопрос</button>
-
-        <input class="question-form__checkbox" name="user-agreement" type="checkbox" id="rules">
-        <label class="question-form__label" for="rules">Я согласен с <a href="#">правилами обработки персональных данных</a> и пользовательским соглашением</label>
-      </form>
-    </section>
-
-    <script src="js/select-city-popup.js"></script>
-    <script src="js/ask-question-popup.js"></script>
-    <script src="js/open-close-menu.js"></script>
+      <script src="js/main.js"></script>
+    </div>
   </body>
 </html>

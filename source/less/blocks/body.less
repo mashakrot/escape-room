@@ -1,6 +1,6 @@
-.body--main {
+.body-wrapper__main {
   // background: linear-gradient(272.36deg, rgba(99, 60, 15, 0) 35.91%, #c28366 65.15%, #1A140D 98.48%), radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%), url("../img/w-a-t-a-r-i-535375-unsplash.jpg");
-
+  min-height: 100vh;
   background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-position: 0 calc(30% + 14px);
@@ -8,7 +8,8 @@
   background-color: #22150e;
 }
 
-.body--maniac {
+.body-wrapper__maniac {
+  min-height: 100vh;
   background-image: url("../img/maniac-bg.jpg");
   background-repeat: no-repeat;
   background-position: -470px calc(25% + 59px);
@@ -16,7 +17,8 @@
   background-color: #040506;
 }
 
-.body--maniac-order {
+.body-wrapper__maniac-order {
+  min-height: 100vh;
   background-image: url("../img/maniac-order.png");
   background-size: 100% 100vh;
   background-repeat: no-repeat;
@@ -24,7 +26,8 @@
   background-color: #151413;
 }
 
-.body--secrets-of-mansion {
+.body-wrapper__secrets-of-mansion {
+  min-height: 100vh;
   background-image: url("../img/secret-of-old-mansion-bg.jpg");
   background-repeat: no-repeat;
   background-position: -332px -132px;
@@ -32,7 +35,8 @@
   background-color: #0c262d;
 }
 
-.body--ritual {
+.body-wrapper__ritual {
+  min-height: 100vh;
   background-image: url("../img/ritual-bg.jpg");
   // background-size: 1889px auto;
   background-repeat: no-repeat;
@@ -41,7 +45,8 @@
   background-color: #0e100f;
 }
 
-.body--fatal-experiment {
+.body-wrapper__fatal-experiment {
+  min-height: 100vh;
   background-image: url("../img/fatal-experiment-bg.jpg");
   background-repeat: no-repeat;
   background-position: -947px -245px;
@@ -49,101 +54,101 @@
   background-color: #211514;
 }
 
-.body--cities-popup-open {
+.body-wrapper--cities-popup-open {
   background: #3d3333;
 }
 
-.body--question-popup-open {
+.body-wrapper--question-popup-open {
   background: #3d3333;
 }
 
-.body--date-popup-open {
+.body-wrapper--date-popup-open {
   background: #3d3333;
 }
 
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-  .body--main {
+  .body-wrapper__main {
     background-image: url("../img/main-bg@2x.jpg");
   }
 
-  .body--maniac {
+  .body-wrapper__maniac {
     background-image: url("../img/maniac-bg@2x.jpg");
   }
 
-  .body--maniac-order {
+  .body-wrapper__maniac-order {
     background-image: url("../img/maniac-order@2x.png");
   }
 
-  .body--secrets-of-mansion {
+  .body-wrapper__secrets-of-mansion {
     background-image: url("../img/secret-of-old-mansion-bg@2x.jpg");
   }
 
-  .body--ritual {
+  .body-wrapper__ritual {
     background-image: url("../img/ritual-bg@2x.jpg");
   }
 
-  .body--fatal-experiment {
+  .body-wrapper__fatal-experiment {
     background-image: url("../img/fatal-experiment-bg@2x.jpg");
   }
 }
 
 @media (max-width: @tablet-width) {
-  .body--main {
+  .body-wrapper__main {
     background-size: calc(100% + 619px) auto;
     background-position: 0 -97px;
   }
 
-  .body--maniac-order {
+  .body-wrapper__maniac-order {
     background-size: 150% 100vh;
   }
 
-  .body--secrets-of-mansion {
+  .body-wrapper__secrets-of-mansion {
     background-position: -328px -137px;
     background-size: calc(100% + 500px) auto;
   }
 
-  .body--ritual {
+  .body-wrapper__ritual {
     background-position: -450px calc(25vh - 266px);
   }
 
-  .body--fatal-experiment {
+  .body-wrapper__fatal-experiment {
     background-position: -865px -104px;
   }
 }
 
 @media (max-width: @mobile-width) {
-  .body--main {
+  .body-wrapper__main {
     background-size: calc(100% + 697px) auto;
     background-position: calc(50% + 66px) -46px;
   }
 
-  .body--maniac {
+  .body-wrapper__maniac {
     background-size: calc(100% + 560px) auto;
     background-position: calc(50% + 14px) -176px;
   }
 
-  .body--maniac-order {
+  .body-wrapper__maniac-order {
     background-image: url("../img/maniac-order-bg-mobile.png");
     background-size: 100% 100vh;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    .body--maniac-order {
+    .body-wrapper__maniac-order {
       background-image: url("../img/maniac-order-bg-mobile@2x.png");
     }
   }
 
-  .body--secrets-of-mansion {
+  .body-wrapper__secrets-of-mansion {
     background-position: calc(50% + 79px) -128px;
     background-size: calc(100% + 792px) auto;
   }
 
-  .body--ritual {
+  .body-wrapper__ritual {
     background-size: calc(100% + 798px) auto;
     background-position: calc(50% + 23px) -138px;
   }
 
-  .body--fatal-experiment {
+  .body-wrapper__fatal-experiment {
     background-position: calc(50% - 166px) 0;
     background-size: calc(100% + 609px) auto;
   }

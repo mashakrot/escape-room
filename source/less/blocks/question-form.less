@@ -29,13 +29,6 @@
   margin-top: 14px;
 }
 
-// .question-form__name-legend {
-// position: absolute;
-// width: 1px;
-// height: 1px;
-// clip: rect(0, 0, 0, 0);
-// }
-
 .question-form__name-in-focus {
   // display: none;
   width: auto;
@@ -49,13 +42,6 @@
   position: absolute;
   background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 }
-
-// .question-form__email-legend {
-// position: absolute;
-// width: 1px;
-// height: 1px;
-// clip: rect(0, 0, 0, 0);
-// }
 
 .question-form__email-in-focus {
   // display: none;
@@ -84,7 +70,7 @@
   background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 }
 
-.question-form__input {
+.question-form input {
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-sizing: border-box;
   border-radius: 3px;
@@ -99,11 +85,11 @@
   padding-bottom: 3px;
 }
 
-.question-form__email-input:invalid {
+.question-form input[name="e-mail"]:invalid {
   box-shadow: none;
 }
 
-.question-form__input:focus {
+.question-form input:focus {
   border-color: #2cdb52;
 }
 
@@ -118,7 +104,7 @@
   margin-left: 23px;
 }
 
-.question-form__textarea {
+.question-form textarea {
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-sizing: border-box;
   border-radius: 3px;
@@ -135,14 +121,14 @@
   padding-top: 15px;
 }
 
-.question-form__checkbox {
+.question-form input[type="checkbox"] {
   position: absolute;
   width: 1px;
   height: 1px;
   clip: rect(0, 0, 0, 0);
 }
 
-.question-form__label {
+.question-form label {
   color: #ffffff;
   font-size: 14px;
   margin-top: 23px;
@@ -150,7 +136,7 @@
   margin-left: 23px;
 }
 
-.question-form__label a {
+.question-form label a {
   color: #ffffff;
   font-size: 14px;
   text-decoration: underline;
@@ -191,19 +177,19 @@
     font-size: 13px;
   }
 
-  .question-form__input {
+  .question-form input {
     width: 380px;
   }
 
-  .question-form__textarea {
+  .question-form textarea {
     width: 380px;
   }
 
-  .question-form__label {
+  .question-form label {
     font-size: 13px;
   }
 
-  .question-form__label a {
+  .question-form label a {
     font-size: 13px;
   }
 }
@@ -219,7 +205,7 @@
     line-height: 22px;
   }
 
-  .question-form__input {
+  .question-form input {
     margin-top: 15px;
     width: calc(100% - 10px);
   }
@@ -228,12 +214,12 @@
     font-size: 15px;
   }
 
-  .question-form__textarea {
+  .question-form textarea {
     padding-top: 17px;
     width: calc(100% - 10px);
   }
 
-  .question-form__label {
+  .question-form label {
     font-size: 14px;
     width: 330px;
     margin: 0 auto;
@@ -241,7 +227,7 @@
     padding-left: 23px;
   }
 
-  .question-form__label a {
+  .question-form label a {
     font-size: 14px;
     display: inline;
   }
