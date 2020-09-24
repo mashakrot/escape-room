@@ -42,11 +42,35 @@
   opacity: 0.8;
 }
 
+.sessions-time-list__label:active {
+  opacity: 0.8;
+}
+
+.sessions-time-list__label:focus {
+  opacity: 0.8;
+}
+
 .sessions-time-list__input:disabled + .sessions-time-list__label:hover {
   opacity: 1;
 }
 
 .sessions-time-list__input:checked + .sessions-time-list__label:hover {
+  opacity: 1;
+}
+
+.sessions-time-list__input:disabled + .sessions-time-list__label:focus {
+  opacity: 1;
+}
+
+.sessions-time-list__input:checked + .sessions-time-list__label:focus {
+  opacity: 1;
+}
+
+.sessions-time-list__input:disabled + .sessions-time-list__label:active {
+  opacity: 1;
+}
+
+.sessions-time-list__input:checked + .sessions-time-list__label:active {
   opacity: 1;
 }
 
