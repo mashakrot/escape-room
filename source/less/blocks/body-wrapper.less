@@ -13,7 +13,8 @@
   background-image: url("../img/maniac-bg.jpg");
   background-repeat: no-repeat;
   background-position: -470px calc(25% + 59px);
-  background-size: calc(100% + 466px) auto;
+  // background-size: calc(100% + 466px) auto;
+  background-size: calc(100% + 470px) auto;
   background-color: #040506;
 }
 
@@ -30,7 +31,8 @@
   min-height: 100vh;
   background-image: url("../img/secret-of-old-mansion-bg.jpg");
   background-repeat: no-repeat;
-  background-position: -332px -132px;
+  background-position: 0 0;
+  // background-position: -332px -132px;
   background-size: calc(100% + 332px) auto;
   background-color: #0c262d;
 }
@@ -95,7 +97,8 @@
 @media (max-width: @tablet-width) {
   .body-wrapper__main {
     background-size: calc(100% + 619px) auto;
-    background-position: 0 -97px;
+    // background-position: 0 -97px;
+    background-position: 0 calc(50vh - 480px);
   }
 
   .body-wrapper__maniac-order {
@@ -104,7 +107,8 @@
 
   .body-wrapper__secrets-of-mansion {
     background-position: -328px -137px;
-    background-size: calc(100% + 500px) auto;
+    // background-size: calc(100% + 500px) auto;
+    background-size: auto calc(100vh + 137px);
   }
 
   .body-wrapper__ritual {
@@ -132,15 +136,11 @@
     background-size: 100% 100vh;
   }
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    .body-wrapper__maniac-order {
-      background-image: url("../img/maniac-order-bg-mobile@2x.png");
-    }
-  }
 
   .body-wrapper__secrets-of-mansion {
     background-position: calc(50% + 79px) -128px;
-    background-size: calc(100% + 792px) auto;
+    // background-size: calc(100% + 792px) auto;
+    background-size: auto calc(100% + 128px);
   }
 
   .body-wrapper__ritual {
@@ -149,7 +149,15 @@
   }
 
   .body-wrapper__fatal-experiment {
+    background-repeat: no-repeat;
     background-position: calc(50% - 166px) 0;
     background-size: calc(100% + 609px) auto;
+    background-color: #211514;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .body-wrapper__maniac-order {
+      background-image: url("../img/maniac-order-bg-mobile@2x.png");
+    }
   }
 }

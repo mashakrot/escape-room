@@ -686,24 +686,6 @@ a:hover {
   margin-top: 74px;
   padding: 0;
 }
-.page-content h1 {
-  padding: 0;
-  margin: 0;
-  font-weight: 800;
-  font-size: 64px;
-  color: #ffffff;
-  padding-top: 111px;
-  line-height: 110%;
-}
-.page-content p {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 150%;
-  color: #ffffff;
-  padding: 0;
-  margin: 0;
-  margin-top: 32px;
-}
 .page-content__wrapper {
   position: fixed;
   width: calc(100% - 272px);
@@ -712,25 +694,6 @@ a:hover {
   top: 74px;
   max-width: 1094px;
   margin-left: -2px;
-}
-.page-content__wrapper p {
-  padding: 0;
-  margin: 0;
-  font-weight: 500;
-  font-size: 14px;
-  color: #f2890f;
-  margin-top: 48px;
-  margin-left: 2px;
-}
-.page-content__wrapper h1 {
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 64px;
-  padding: 0;
-  margin: 0;
-  margin-top: 7px;
-  letter-spacing: -0.007em;
-  margin-left: 2px;
 }
 .page-content__wrapper--cities-popup-open {
   opacity: 0.3;
@@ -757,26 +720,10 @@ a:hover {
   .page-content {
     width: calc(100% - 103px);
   }
-  .page-content h1 {
-    font-size: 60px;
-  }
-  .page-content p {
-    font-size: 15px;
-  }
   .page-content__wrapper {
     top: 109px;
     min-width: 681px;
     width: calc(100% - 83px);
-  }
-  .page-content__wrapper p {
-    width: calc(25% + 515px);
-    margin: 0 auto;
-    margin-top: 37px;
-  }
-  .page-content__wrapper h1 {
-    width: calc(25% + 515px);
-    font-size: 60px;
-    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
@@ -795,30 +742,10 @@ a:hover {
     height: 100%;
     margin-bottom: 64px;
   }
-  .page-content h1 {
-    font-size: 36px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 341px;
-  }
-  .page-content p {
-    display: none;
-  }
   .page-content__wrapper {
     width: calc(100% - 28px);
     min-width: auto;
     top: 66px;
-  }
-  .page-content__wrapper p {
-    width: 328px;
-    margin-top: 22px;
-  }
-  .page-content__wrapper h1 {
-    width: 328px;
-    margin: 0 auto;
-    margin-top: 12px;
-    line-height: 40px;
-    font-size: 36px;
   }
 }
 .page-promo-text {
@@ -1043,7 +970,7 @@ a:hover {
   display: block;
   opacity: 1;
 }
-.modal-select-city h3 {
+.modal-select-city__title {
   color: #ffffff;
   font-weight: 800;
   font-size: 32px;
@@ -1052,7 +979,7 @@ a:hover {
   margin-top: 32px;
   margin-left: 32px;
 }
-.modal-select-city p {
+.modal-select-city__text {
   color: #ffffff;
   font-size: 17px;
   padding: 0;
@@ -1067,10 +994,10 @@ a:hover {
     width: 460px;
     left: calc(50% - 230px);
   }
-  .modal-select-city h3 {
+  .modal-select-city__title {
     font-size: 30px;
   }
-  .modal-select-city p {
+  .modal-select-city__text {
     font-size: 15px;
   }
 }
@@ -1081,12 +1008,12 @@ a:hover {
     left: 0;
     top: 0;
   }
-  .modal-select-city h3 {
+  .modal-select-city__title {
     font-size: 32px;
     margin-top: 32px;
     margin-left: 15px;
   }
-  .modal-select-city p {
+  .modal-select-city__text {
     font-size: 17px;
     margin-top: 45px;
     margin-left: 17px;
@@ -1207,7 +1134,7 @@ a:hover {
   background-image: url("../img/maniac-bg.jpg");
   background-repeat: no-repeat;
   background-position: -470px calc(25% + 59px);
-  background-size: calc(100% + 466px) auto;
+  background-size: calc(100% + 470px) auto;
   background-color: #040506;
 }
 .body-wrapper__maniac-order {
@@ -1222,7 +1149,7 @@ a:hover {
   min-height: 100vh;
   background-image: url("../img/secret-of-old-mansion-bg.jpg");
   background-repeat: no-repeat;
-  background-position: -332px -132px;
+  background-position: 0 0;
   background-size: calc(100% + 332px) auto;
   background-color: #0c262d;
 }
@@ -1274,14 +1201,14 @@ a:hover {
 @media (max-width: 1023px) {
   .body-wrapper__main {
     background-size: calc(100% + 619px) auto;
-    background-position: 0 -97px;
+    background-position: 0 calc(50vh - 480px);
   }
   .body-wrapper__maniac-order {
     background-size: 150% 100vh;
   }
   .body-wrapper__secrets-of-mansion {
     background-position: -328px -137px;
-    background-size: calc(100% + 500px) auto;
+    background-size: auto calc(100vh + 137px);
   }
   .body-wrapper__ritual {
     background-position: -450px calc(25vh - 266px);
@@ -1305,15 +1232,18 @@ a:hover {
   }
   .body-wrapper__secrets-of-mansion {
     background-position: calc(50% + 79px) -128px;
-    background-size: calc(100% + 792px) auto;
+    background-size: auto calc(100% + 128px);
   }
   .body-wrapper__ritual {
     background-size: calc(100% + 798px) auto;
     background-position: calc(50% + 23px) -138px;
   }
   .body-wrapper__fatal-experiment {
+    background: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/fatal-experiment-bg-mobile.jpg");
+    background-repeat: no-repeat;
     background-position: calc(50% - 166px) 0;
     background-size: calc(100% + 609px) auto;
+    background-color: #211514;
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -1329,7 +1259,7 @@ a:hover {
   display: block;
   opacity: 1;
 }
-.modal-ask-question h3 {
+.modal-ask-question__title {
   padding: 0;
   margin: 0;
   color: #ffffff;
@@ -1343,7 +1273,7 @@ a:hover {
     width: 460px;
     left: calc(50% - 230px);
   }
-  .modal-ask-question h3 {
+  .modal-ask-question__title {
     font-size: 30px;
   }
 }
@@ -1354,7 +1284,7 @@ a:hover {
     left: 0;
     top: 0;
   }
-  .modal-ask-question h3 {
+  .modal-ask-question__title {
     font-size: 32px;
     margin-top: 32px;
     margin-left: 15px;
@@ -1431,7 +1361,7 @@ a:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1f1d1d));
   background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 }
-.question-form__input {
+.question-form input {
   border: 1px solid rgba(255, 255, 255, 0.4);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1446,11 +1376,11 @@ a:hover {
   padding-left: 23px;
   padding-bottom: 3px;
 }
-.question-form__email-input:invalid {
+.question-form input[name="e-mail"]:invalid {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.question-form__input:focus {
+.question-form input:focus {
   border-color: #2cdb52;
 }
 .question-form__invalid-text {
@@ -1480,20 +1410,20 @@ a:hover {
   padding-bottom: 3px;
   padding-top: 15px;
 }
-.question-form__checkbox {
+.question-form input[type="checkbox"] {
   position: absolute;
   width: 1px;
   height: 1px;
   clip: rect(0, 0, 0, 0);
 }
-.question-form__label {
+.question-form label {
   color: #ffffff;
   font-size: 14px;
   margin-top: 23px;
   line-height: 20px;
   margin-left: 23px;
 }
-.question-form__label a {
+.question-form label a {
   color: #ffffff;
   font-size: 14px;
   text-decoration: underline;
@@ -1529,16 +1459,16 @@ a:hover {
   .question-form__moving-text {
     font-size: 13px;
   }
-  .question-form__input {
+  .question-form input {
     width: 380px;
   }
-  .question-form__textarea {
+  .question-form textarea {
     width: 380px;
   }
-  .question-form__label {
+  .question-form label {
     font-size: 13px;
   }
-  .question-form__label a {
+  .question-form label a {
     font-size: 13px;
   }
 }
@@ -1551,25 +1481,25 @@ a:hover {
     margin-top: 30px;
     line-height: 22px;
   }
-  .question-form__input {
+  .question-form input {
     margin-top: 15px;
     width: calc(100% - 10px);
   }
   .question-form__moving-text {
     font-size: 15px;
   }
-  .question-form__textarea {
+  .question-form textarea {
     padding-top: 17px;
     width: calc(100% - 10px);
   }
-  .question-form__label {
+  .question-form label {
     font-size: 14px;
     width: 330px;
     margin: 0 auto;
     margin-top: 23px;
     padding-left: 23px;
   }
-  .question-form__label a {
+  .question-form label a {
     font-size: 14px;
     display: inline;
   }
@@ -2005,7 +1935,7 @@ a:hover {
   margin-left: -18px;
   margin-top: -1px;
 }
-.quests-list h3 {
+.quests-list__title {
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -2015,7 +1945,7 @@ a:hover {
   margin-left: 19px;
   margin-top: 86px;
 }
-.quests-list p {
+.quests-list__address {
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -2024,7 +1954,7 @@ a:hover {
   margin-bottom: 10px;
   margin-left: 39px;
 }
-.quests-list p::before {
+.quests-list__address::before {
   content: "";
   position: absolute;
   width: 11px;
@@ -2230,14 +2160,14 @@ a:hover {
   margin-left: calc(50% - 82px);
   margin-top: calc(25vh - 53px);
 }
-.quest-page-content__wrapper p {
+.quest-page-content__kind-of-quest {
   padding: 0;
   margin: 0;
   font-weight: 500;
   font-size: 14px;
   color: #f2890f;
 }
-.quest-page-content__wrapper h1 {
+.quest-page-content__title {
   padding: 0;
   margin: 0;
   font-style: normal;
@@ -2249,7 +2179,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: -0.03em;
 }
-.quest-page-content p {
+.quest-page-content__description {
   padding: 0;
   margin: 0;
   color: #ffffff;
@@ -2264,7 +2194,7 @@ a:hover {
     width: auto;
     margin-left: calc(90% - 507px);
   }
-  .quest-page-content__wrapper h1 {
+  .quest-page-content__title {
     font-size: 76px;
   }
 }
@@ -2288,17 +2218,17 @@ a:hover {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .quest-page-content__wrapper p {
+  .quest-page-content__kind-of-quest {
     margin-left: 15px;
   }
-  .quest-page-content__wrapper h1 {
+  .quest-page-content__title {
     font-size: 42px;
     margin-left: 15px;
     margin-top: 12px;
     line-height: 46px;
     letter-spacing: 0;
   }
-  .quest-page-content p {
+  .quest-page-content__description {
     margin: 0 auto;
     width: calc(100% - 33px);
     display: block;
@@ -2461,7 +2391,7 @@ a:hover {
   text-transform: lowercase;
   margin-left: 5px;
 }
-.quest-order h1 {
+.quest-order__title {
   padding: 0;
   margin: 0;
   color: #ffffff;
@@ -2490,7 +2420,7 @@ a:hover {
   .quest-order {
     width: calc(100% - 130px);
   }
-  .quest-order h1 {
+  .quest-order__title {
     padding-bottom: 35px;
     padding-top: 35px;
     font-size: 87px;
@@ -2543,7 +2473,7 @@ a:hover {
     margin: 0;
     margin-top: 35px;
   }
-  .quest-order h1 {
+  .quest-order__title {
     font-size: 42px;
     padding: 0;
     margin: 0;
