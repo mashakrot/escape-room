@@ -1085,6 +1085,7 @@ a:hover {
   margin-top: 30px;
   margin-left: 61px;
   display: inline-block;
+  vertical-align: baseline;
   height: 21px;
 }
 .button-to-locate::before {
@@ -1134,6 +1135,7 @@ a:hover {
   color: #ffffff;
   border-bottom: 2px solid #f2890f;
   display: inline-block;
+  vertical-align: baseline;
 }
 .cities-list__item a:hover {
   color: #ffffff;
@@ -1491,6 +1493,7 @@ a:hover {
   font-size: 14px;
   text-decoration: underline;
   display: inline-block;
+  vertical-align: baseline;
 }
 .question-form__checkbox + .question-form__label::before {
   content: "";
