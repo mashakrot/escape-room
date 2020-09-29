@@ -1,18 +1,18 @@
 .navigation-list {
+  display: flex;
+  width: calc(100% - 377px);
   padding: 0;
   margin: 0;
-  display: flex;
   padding-top: 10px;
   justify-content: space-between;
-  width: calc(100% - 377px);
 }
 
 .navigation-list__item {
-  list-style: none;
+  padding: 0 10px;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.03em;
-  padding: 0 10px;
+  list-style: none;
 }
 
 .navigation-list__item:hover {
@@ -28,8 +28,8 @@
 }
 
 .navigation-list__item a {
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .navigation-list__item--active a {
@@ -50,8 +50,8 @@
 
 @media (max-width: @tablet-width) {
   .navigation-list {
-    justify-content: flex-end;
     width: auto;
+    justify-content: flex-end;
   }
 
   .navigation-list__item {
@@ -65,13 +65,13 @@
 
 @media (max-width: @mobile-width) {
   .navigation-list {
-    flex-direction: column;
     padding-top: 20px;
+    flex-direction: column;
   }
 
   .navigation-list__item {
-    text-align: center;
     padding: 14px 0;
+    text-align: center;
     font-size: 16px;
   }
 }

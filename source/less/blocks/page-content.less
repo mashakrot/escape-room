@@ -1,20 +1,19 @@
 .page-content {
   width: calc(100% - 272px);
-  margin: 0 auto;
   max-width: 1094px;
+  margin: 0 auto;
   margin-top: 74px;
   padding: 0;
-  // height: calc(100vh - 74px);
 }
 
 .page-content__wrapper {
   position: fixed;
-  width: calc(100% - 272px);
-  background-color: #1f1d1d;
   z-index: 50;
   top: 74px;
+  width: calc(100% - 272px);
   max-width: 1094px;
   margin-left: -2px;
+  background-color: #1f1d1d;
 }
 
 .page-content__wrapper--cities-popup-open {
@@ -58,17 +57,17 @@
 
 @media (max-width: @mobile-width) {
   .page-content {
-    width: calc(100% - 32px);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    width: calc(100% - 32px);
     height: 100%;
     margin-bottom: 64px;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .page-content__wrapper {
+    top: 66px;
     width: calc(100% - 28px);
     min-width: auto;
-    top: 66px;
   }
 }

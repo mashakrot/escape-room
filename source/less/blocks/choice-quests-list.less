@@ -1,22 +1,21 @@
 .choice-quests-list {
   display: flex;
-  padding: 0;
-  margin: 0 auto;
   width: calc(100% - 14px);
   height: 40px;
-  list-style: none;
+  padding: 0;
+  margin: 0 auto;
   margin-top: 48px;
   margin-bottom: 10px;
-  justify-content: center;
   margin-left: 0;
+  list-style: none;
+  justify-content: center;
 }
 
 .choice-quests-list__item {
-  text-align: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.32);
-  // padding-right: 40px;
   padding-top: 10px;
   padding-right: calc(10% - 68px);
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.32);
   cursor: pointer;
 }
 
@@ -37,10 +36,10 @@
 }
 
 .choice-quests-list__item a {
-  color: #ffffff;
+  height: 21px;
   font-weight: 500;
   font-size: 14px;
-  height: 21px;
+  color: #ffffff;
 }
 
 .choice-quests-list__item--active a {
@@ -60,7 +59,6 @@
 }
 
 .choice-quests-list__all-quests {
-  // padding-left: 31px;
   padding-left: calc(10% - 77px);
 }
 
@@ -69,15 +67,14 @@
   position: absolute;
   width: 26px;
   height: 30px;
+  margin-left: -75px;
+  margin-top: -6px;
   background-image: url("../img/all-quests.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-left: -75px;
-  margin-top: -6px;
 }
 
 .choice-quests-list__adventures {
-  // padding-left: 86px;
   padding-left: calc(10% - 21px);
 }
 
@@ -86,15 +83,14 @@
   position: absolute;
   width: 36px;
   height: 30px;
+  margin-left: -93px;
+  margin-top: -6px;
   background-image: url("../img/adventures.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-left: -93px;
-  margin-top: -6px;
 }
 
 .choice-quests-list__horrors {
-  // padding-left: 81px;
   padding-left: calc(10% - 28px);
 }
 
@@ -103,15 +99,14 @@
   position: absolute;
   width: 30px;
   height: 30px;
+  margin-top: -6px;
+  margin-left: -63px;
   background-image: url("../img/horrors.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-top: -6px;
-  margin-left: -63px;
 }
 
 .choice-quests-list__mysticism {
-  // padding-left: 80px;
   padding-left: calc(10% - 27px);
 }
 
@@ -120,15 +115,14 @@
   position: absolute;
   width: 30px;
   height: 30px;
+  margin-top: -6px;
+  margin-left: -69px;
   background-image: url("../img/mysticism.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-top: -6px;
-  margin-left: -69px;
 }
 
 .choice-quests-list__detective {
-  // padding-left: 90px;
   padding-left: calc(10% - 18px);
 }
 
@@ -137,15 +131,14 @@
   position: absolute;
   width: 40px;
   height: 30px;
+  margin-top: -6px;
+  margin-left: -83px;
   background-image: url("../img/detective.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-top: -6px;
-  margin-left: -83px;
 }
 
 .choice-quests-list__sci-fi {
-  // padding-left: 79px;
   padding-left: calc(10% - 30px);
 }
 
@@ -154,22 +147,22 @@
   position: absolute;
   width: 28px;
   height: 30px;
+  margin-top: -6px;
+  margin-left: -56px;
   background-image: url("../img/sciFi.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-top: -6px;
-  margin-left: -56px;
 }
 
 @media (max-width: @tablet-width) {
   .choice-quests-list {
     width: 550px;
     height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .choice-quests-list__item {
@@ -208,19 +201,19 @@
 
 @media (max-width: @mobile-width) {
   .choice-quests-list-wrapper {
-    width: 332px;
-    overflow: hidden;
     position: absolute;
     left: calc(50% - 166px);
     top: 130px;
+    width: 332px;
+    overflow: hidden;
     background-color: #1f1d1d;
   }
 
   .choice-quests-list {
     width: 1751px;
-    flex-wrap: inherit;
     height: 32px;
     margin-top: 41px;
+    flex-wrap: inherit;
     justify-content: normal;
   }
 
@@ -228,9 +221,9 @@
     margin: 0;
     padding: 0;
     padding-right: 16px;
-    font-size: 14px;
     padding-top: 8px;
     padding-left: 55px;
+    font-size: 14px;
   }
 
   .choice-quests-list__item a {
@@ -252,44 +245,44 @@
   .choice-quests-list__all-quests::before {
     width: 21px;
     height: 24px;
-    background-size: 21px 24px;
     margin-top: -4px;
     margin-left: -71px;
+    background-size: 21px 24px;
   }
 
   .choice-quests-list__adventures::before {
     width: 29px;
     height: 24px;
-    background-size: 29px 24px;
     margin-top: -4px;
     margin-left: -87px;
+    background-size: 29px 24px;
   }
 
   .choice-quests-list__horrors::before {
     width: 24px;
     height: 24px;
-    background-size: 24px 24px;
     margin-top: -4px;
+    background-size: 24px 24px;
   }
 
   .choice-quests-list__mystics::before {
     width: 24px;
     height: 24px;
-    background-size: 24px 24px;
     margin-top: -4px;
+    background-size: 24px 24px;
   }
 
   .choice-quests-list__detective::before {
     width: 32px;
     height: 24px;
-    background-size: 32px 24px;
     margin-top: -4px;
+    background-size: 32px 24px;
   }
 
   .choice-quests-list__sci-fi::before {
     width: 23px;
     height: 24px;
-    background-size: 23px 24px;
     margin-top: -4px;
+    background-size: 23px 24px;
   }
 }

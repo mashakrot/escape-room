@@ -1,41 +1,39 @@
 .sessions-time-list {
+  display: flex;
+  width: calc(80% - 23px);
+  max-width: 852px;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  max-width: 852px;
-  width: calc(80% - 23px);
   margin-top: 50px;
   margin-left: 46px;
-
-  // display: none;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .sessions-time-list__item {
-  color: #ffffff;
   margin-right: 32px;
   margin-bottom: 35px;
+  color: #ffffff;
 }
 
 .sessions-time-list__input {
+  position: absolute;
   width: 0;
   height: 0;
-  position: absolute;
   visibility: hidden;
 }
 
 .sessions-time-list__label {
   cursor: pointer;
   display: block;
+  width: 110px;
+  height: 38px;
+  padding-top: 6px;
+  text-align: center;
+  letter-spacing: 0.05em;
   border: 2px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 65px;
-  width: 110px;
-  height: 38px;
-  text-align: center;
-  padding-top: 6px;
-  letter-spacing: 0.05em;
 }
 
 .sessions-time-list__label:hover {
@@ -75,25 +73,25 @@
 }
 
 .sessions-time-list__input:disabled + .sessions-time-list__label {
-  border: none;
   padding-top: 8px;
+  border: none;
   background: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
 }
 
 .sessions-time-list__input:checked + .sessions-time-list__label {
-  border: none;
   padding-top: 8px;
+  border: none;
   background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
 }
 
 .sessions-time-list__price {
   padding: 0;
   margin: 0;
+  padding-top: 4px;
+  margin-left: -13px;
   font-weight: 500;
   font-size: 12px;
   text-align: center;
-  padding-top: 4px;
-  margin-left: -13px;
 }
 
 .sessions-time-list__price::after {
@@ -101,11 +99,11 @@
   position: absolute;
   width: 8px;
   height: 11px;
+  margin-left: 4px;
+  margin-top: 2px;
   background-image: url("../img/ruble.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-left: 4px;
-  margin-top: 2px;
   background-size: 8px 11px;
 }
 

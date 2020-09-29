@@ -1,7 +1,7 @@
 .quest-order {
+  width: calc(100% - 272px);
   padding: 0;
   margin: 0 auto;
-  width: calc(100% - 272px);
   margin-top: 138px;
 }
 
@@ -14,54 +14,50 @@
 }
 
 .quest-order__wrapper {
-  display: flex;
   position: absolute;
-  // margin-top: -109px;
   top: 155px;
-  // margin-left: 465px;
+  display: flex;
+  width: calc(20% + 131px);
   margin-left: calc(20% + 190px);
   justify-content: space-between;
-  width: calc(20% + 131px);
-  // display: none;
 }
 
 .quest-order__text {
   padding: 0;
   margin: 0;
+  margin-left: 5px;
   font-weight: 500;
   font-size: 14px;
-  color: #f2890f;
   text-transform: lowercase;
-  margin-left: 5px;
+  color: #f2890f;
 }
 
 .quest-order__title {
   padding: 0;
   margin: 0;
-  color: #ffffff;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 92px;
   letter-spacing: -0.03em;
+  color: #ffffff;
   border-bottom: 0.5px solid rgba(230, 230, 230, 0.25);
 }
 
 .quest-order__your-order {
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 15px;
+  display: flex;
+  width: 162px;
   padding: 0;
   margin: 0;
   padding-top: 23px;
+  font-weight: 500;
+  font-size: 15px;
   line-height: 150%;
-  width: 162px;
-  display: flex;
   flex-wrap: wrap;
+  color: #ffffff;
 }
 
 @media (max-width: @tablet-width) {
   .quest-order {
-    // width: calc(100% - 210px);
     width: calc(100% - 130px);
   }
 
@@ -72,10 +68,8 @@
   }
 
   .quest-order__wrapper {
-    // margin-top: -175px;
-    flex-direction: column;
-    // margin-left: 460px;
     margin-left: calc(30% + 229px);
+    flex-direction: column;
   }
 }
 
@@ -91,12 +85,12 @@
   }
 
   .quest-order__description {
-    color: #ffffff;
     display: block;
+    margin-left: 14px;
     font-size: 12px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    margin-left: 14px;
+    color: #ffffff;
   }
 
   .quest-order__description:hover {
@@ -116,42 +110,42 @@
     position: absolute;
     width: 8px;
     height: 12px;
+    margin-left: -15px;
+    margin-top: 1px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    margin-left: -15px;
-    margin-top: 1px;
   }
 
   .quest-order__genre {
     display: block;
-    color: #f2890f;
-    font-weight: 500;
-    font-size: 14px;
     padding: 0;
     margin: 0;
     margin-top: 35px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #f2890f;
   }
 
   .quest-order__title {
-    font-size: 42px;
     padding: 0;
     margin: 0;
-    letter-spacing: 0;
     margin-top: 9px;
     padding-bottom: 12px;
+    letter-spacing: 0;
+    font-size: 42px;
   }
 
   .quest-order__wrapper {
     position: static;
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
   }
 
   .quest-order__your-order {
-    width: 100%;
     display: block;
+    width: 100%;
     padding-top: 7px;
   }
 }

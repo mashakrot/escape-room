@@ -68,7 +68,7 @@
     }
   };
 
-  var formValidation = function () {
+  var checkForm = function () {
     buttonAskQuestion.addEventListener('mouseover', function () {
       buttonAskQuestion.innerHTML = '? Задать вопрос';
     });
@@ -85,26 +85,26 @@
     });
 
     nameInput.addEventListener('focus', function () {
-      nameInFocus.style = 'display: block';
+      nameInFocus.classList.add('question-form__name-in-focus--block');
       nameInput.placeholder = '';
     });
     nameInput.addEventListener('blur', function () {
-      nameInFocus.style = 'display: none';
+      nameInFocus.classList.remove('question-form__name-in-focus--block');
       nameInput.placeholder = 'Имя';
     });
 
     emailInput.addEventListener('focus', function () {
-      emailInFocus.style = 'display: block';
+      emailInFocus.classList.add('question-form__email-in-focus--block');
       emailInput.placeholder = '';
     });
     emailInput.addEventListener('blur', function () {
-      emailInFocus.style = 'display: none';
+      emailInFocus.classList.remove('question-form__email-in-focus--block');
       emailInput.placeholder = 'E-mail';
     });
 
     emailInput.addEventListener('invalid', function () {
       emailInFocus.classList.add('question-form__email--invalid');
-      invalidText.style = 'display: block;';
+      invalidText.classList.remove('question-form__invalid-text--none');
       emailInput.style = 'border-color: #f2901d;';
       text.classList.add('question-form__moving-text--invalid');
     });
@@ -121,7 +121,7 @@
   window.addEventListener('keydown', onPopupEscPress);
   window.addEventListener('click', onOverlayClick);
   closeButton.addEventListener('click', onCloseButtonMouseDown);
-  formValidation();
+  checkForm();
 })();
 
 'use strict';

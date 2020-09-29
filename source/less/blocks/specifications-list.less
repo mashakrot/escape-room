@@ -1,20 +1,20 @@
 .specifications-list {
+  display: flex;
+  height: 36px;
   padding: 0;
   margin: 0;
-  display: flex;
+  margin-top: 22px;
   list-style: none;
   color: #ffffff;
-  height: 36px;
-  margin-top: 22px;
 }
 
 .specifications-list__item {
-  border-right: 1px solid rgba(255, 255, 255, 0.36);
   padding-right: 25px;
+  padding-top: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  padding-top: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
 }
 
 .specifications-list__item:last-child {
@@ -30,11 +30,11 @@
   position: absolute;
   width: 24px;
   height: 24px;
+  margin-left: -31px;
+  margin-top: -5px;
   background-image: url("../img/clock.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-left: -31px;
-  margin-top: -5px;
 }
 
 .specifications-list__item--number-of-people {
@@ -46,11 +46,11 @@
   position: absolute;
   width: 19px;
   height: 24px;
+  margin-left: -31px;
+  margin-top: -5px;
   background-image: url("../img/person.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-left: -31px;
-  margin-top: -5px;
 }
 
 .specifications-list__item--level {
@@ -62,11 +62,11 @@
   position: absolute;
   width: 24px;
   height: 24px;
+  margin-left: -31px;
+  margin-top: -5px;
   background-image: url("../img/puzzle.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-left: -31px;
-  margin-top: -5px;
 }
 
 @media (max-width: @tablet-width) {
@@ -85,9 +85,9 @@
   }
 
   .specifications-list__item {
+    width: 119px;
     padding: 0;
     margin: 0;
-    width: 119px;
     padding-top: 30px;
     text-align: center;
   }

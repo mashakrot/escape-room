@@ -1,21 +1,19 @@
 .sessions-states {
+  display: flex;
   padding: 0;
   margin: 0;
-  list-style: none;
-  display: flex;
   margin-top: 28px;
   margin-left: 70px;
-
-  // display: none;
+  list-style: none;
 }
 
 .sessions-states__item {
-  color: #ffffff;
   padding: 0;
   margin: 0;
+  margin-right: 47px;
   font-weight: 500;
   font-size: 12px;
-  margin-right: 47px;
+  color: #ffffff;
 }
 
 .sessions-states__item--free::before {
@@ -23,10 +21,10 @@
   position: absolute;
   width: 15px;
   height: 15px;
+  margin-left: -23px;
   border: 2px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 3px;
-  margin-left: -23px;
 }
 
 .sessions-states__item--busy::before {
@@ -34,10 +32,10 @@
   position: absolute;
   width: 15px;
   height: 15px;
+  margin-left: -23px;
   background: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
   box-sizing: border-box;
   border-radius: 3px;
-  margin-left: -23px;
 }
 
 .sessions-states__item--selected::before {
@@ -45,18 +43,18 @@
   position: absolute;
   width: 15px;
   height: 15px;
+  margin-left: -23px;
   background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
   box-sizing: border-box;
   border-radius: 3px;
-  margin-left: -23px;
 }
 
 @media (max-width: @mobile-width) {
   .sessions-states {
+    width: 306px;
     margin: 0;
     margin-top: 25px;
     margin-left: 22px;
-    width: 306px;
     justify-content: space-between;
   }
 
