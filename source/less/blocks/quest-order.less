@@ -22,28 +22,30 @@
   justify-content: space-between;
 }
 
-.quest-order__text {
+.quest-order .quest-order__text {
   padding: 0;
   margin: 0;
   margin-left: 5px;
   font-weight: 500;
   font-size: 14px;
+  line-height: normal;
   text-transform: lowercase;
   color: #f2890f;
 }
 
-.quest-order__title {
+.quest-order h1 {
   padding: 0;
   margin: 0;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 92px;
   letter-spacing: -0.03em;
+  line-height: normal;
   color: #ffffff;
   border-bottom: 0.5px solid rgba(230, 230, 230, 0.25);
 }
 
-.quest-order__your-order {
+.quest-order__wrapper p {
   display: flex;
   width: 162px;
   padding: 0;
@@ -61,7 +63,7 @@
     width: calc(100% - 130px);
   }
 
-  .quest-order__title {
+  .quest-order h1 {
     padding-bottom: 35px;
     padding-top: 35px;
     font-size: 87px;
@@ -80,7 +82,7 @@
     padding-bottom: 90px;
   }
 
-  .quest-order__text {
+  .quest-order .quest-order__text {
     display: none;
   }
 
@@ -117,23 +119,26 @@
     background-position: 0 0;
   }
 
-  .quest-order__genre {
+  .quest-order .quest-order__genre {
     display: block;
     padding: 0;
     margin: 0;
     margin-top: 35px;
     font-weight: 500;
     font-size: 14px;
+    line-height: normal;
     color: #f2890f;
   }
 
-  .quest-order__title {
+  .quest-order h1 {
     padding: 0;
     margin: 0;
     margin-top: 9px;
     padding-bottom: 12px;
     letter-spacing: 0;
+    text-align: left;
     font-size: 42px;
+    line-height: normal;
   }
 
   .quest-order__wrapper {
@@ -143,7 +148,7 @@
     padding: 0;
   }
 
-  .quest-order__your-order {
+  .quest-order__wrapper p {
     display: block;
     width: 100%;
     padding-top: 7px;

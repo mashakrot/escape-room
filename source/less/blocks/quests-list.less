@@ -71,7 +71,7 @@
   visibility: hidden;
 }
 
-.quests-list__title {
+.quests-list h2 {
   padding: 0;
   margin: 0;
   margin-bottom: 11px;
@@ -82,17 +82,19 @@
   color: #ffffff;
 }
 
-.quests-list__address {
+.quests-list p {
+  display: block;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
   margin-left: 39px;
   font-weight: 500;
   font-size: 13px;
+  line-height: normal;
   color: #ffffff;
 }
 
-.quests-list__address::before {
+.quests-list p::before {
   content: "";
   position: absolute;
   width: 11px;
@@ -102,6 +104,13 @@
   background-image: url("../img/location.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.quests-list__title-wrapper {
+  height: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .quests-list__item--vault {
@@ -137,10 +146,6 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: #0c262d;
-}
-
-.quests-list__title--secret-of-old-mansion {
-  margin-top: 58px;
 }
 
 .quests-list__item--cabin-in-forest {

@@ -16,14 +16,14 @@
   color: #ffffff;
 }
 
-.sessions-time-list__input {
+.sessions-time-list__item input {
   position: absolute;
   width: 0;
   height: 0;
   visibility: hidden;
 }
 
-.sessions-time-list__label {
+.sessions-time-list__item label {
   cursor: pointer;
   display: block;
   width: 110px;
@@ -36,55 +36,56 @@
   border-radius: 65px;
 }
 
-.sessions-time-list__label:hover {
+.sessions-time-list__item label:hover {
   opacity: 0.8;
 }
 
-.sessions-time-list__label:active {
+.sessions-time-list__item label:active {
   opacity: 0.8;
 }
 
-.sessions-time-list__label:focus {
+.sessions-time-list__item label:focus {
   opacity: 0.8;
 }
 
-.sessions-time-list__input:disabled + .sessions-time-list__label:hover {
+input[name="session-time"]:disabled + label:hover {
   opacity: 1;
 }
 
-.sessions-time-list__input:checked + .sessions-time-list__label:hover {
+input[name="session-time"]:checked + label:hover {
   opacity: 1;
 }
 
-.sessions-time-list__input:disabled + .sessions-time-list__label:focus {
+input[name="session-time"]:disabled + label:focus {
   opacity: 1;
 }
 
-.sessions-time-list__input:checked + .sessions-time-list__label:focus {
+input[name="session-time"]:checked + label:focus {
   opacity: 1;
 }
 
-.sessions-time-list__input:disabled + .sessions-time-list__label:active {
+input[name="session-time"]:disabled + label:active {
   opacity: 1;
 }
 
-.sessions-time-list__input:checked + .sessions-time-list__label:active {
+input[name="session-time"]:checked + label:active {
   opacity: 1;
 }
 
-.sessions-time-list__input:disabled + .sessions-time-list__label {
+input[name="session-time"]:disabled + label {
   padding-top: 8px;
   border: none;
   background: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
 }
 
-.sessions-time-list__input:checked + .sessions-time-list__label {
+input[name="session-time"]:checked + label {
   padding-top: 8px;
   border: none;
   background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
 }
 
-.sessions-time-list__price {
+.sessions-time-list__item .sessions-time-list__price {
+  display: block;
   padding: 0;
   margin: 0;
   padding-top: 4px;
@@ -92,9 +93,10 @@
   font-weight: 500;
   font-size: 12px;
   text-align: center;
+  line-height: normal;
 }
 
-.sessions-time-list__price::after {
+.sessions-time-list__item .sessions-time-list__price::after {
   content: "";
   position: absolute;
   width: 8px;

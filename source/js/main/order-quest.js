@@ -8,26 +8,25 @@
   var dateInput = document.querySelector('.modal-type-date__input');
   var selectedDate = document.querySelector('.selected-date');
 
-  var praceList = document.querySelectorAll('.sessions-time-list__prace');
-  Number(praceList);
+  var priceList = document.querySelectorAll('.sessions-time-list__price');
+  Number(priceList);
   var selectDateButton = document.querySelector('.button-select-date');
 
   var dateSpan = document.querySelector('.quest-order__date-span');
   var timeSpan = document.querySelector('.quest-order__time-span');
-  var praceSpan = document.querySelector('.quest-order__prace-span');
+  var priceSpan = document.querySelector('.quest-order__price-span');
   var sessionTimeInputs = document.querySelectorAll('.sessions-time-list__input');
 
   var body = document.querySelector('.body-wrapper');
   var pageHeader = document.querySelector('.page-header__wrapper');
   var pageContent = document.querySelector('.page-content');
   var pageFooter = document.querySelector('.page-footer');
-  var pageContentWrapper = document.querySelector('.page-content__wrapper');
 
   var checkSessionAvailability = function () {
     for (var i = 0; i < sessionTimeInputs.length; i++) {
       if (sessionTimeInputs[i].checked === true) {
         timeSpan.innerHTML = sessionTimeInputs[i].value;
-        praceSpan.innerHTML = praceList[i].innerHTML;
+        priceSpan.innerHTML = priceList[i].innerHTML;
       }
     }
   };
@@ -51,7 +50,6 @@
     pageHeader.classList.add('page-header__wrapper--date-popup-open');
     pageContent.classList.add('page-content--date-popup-open');
     pageFooter.classList.add('page-footer--date-popup-open');
-    pageContentWrapper.classList.add('page-content__wrapper--cities-popup-open');
   };
 
   var closePopup = function () {
@@ -61,7 +59,6 @@
       pageHeader.classList.remove('page-header__wrapper--date-popup-open');
       pageContent.classList.remove('page-content--date-popup-open');
       pageFooter.classList.remove('page-footer--date-popup-open');
-      pageContentWrapper.classList.remove('page-content__wrapper--cities-popup-open');
 
       setDate();
       checkSessionAvailability();
