@@ -140,6 +140,15 @@
 }
 
 .question-form label {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.question-form label[for="rules"] {
+  visibility: visible;
+  width: auto;
+  height: auto;
   margin-top: 23px;
   margin-left: 23px;
   font-size: 14px;
@@ -147,7 +156,7 @@
   color: #ffffff;
 }
 
-.question-form label a {
+.question-form label[for="rules"] a {
   display: inline-block;
   font-size: 14px;
   text-decoration: underline;
@@ -155,7 +164,7 @@
   color: #ffffff;
 }
 
-.question-form__checkbox + .question-form__label::before {
+.question-form__checkbox + label[for="rules"]::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -166,7 +175,7 @@
   border-radius: 4px;
 }
 
-.question-form__checkbox:checked + .question-form__label::before {
+.question-form__checkbox:checked + label[for="rules"]::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -197,11 +206,11 @@
     width: 380px;
   }
 
-  .question-form label {
+  .question-form label[for="rules"] {
     font-size: 13px;
   }
 
-  .question-form label a {
+  .question-form label[for="rules"] a {
     font-size: 13px;
   }
 }
@@ -231,7 +240,7 @@
     padding-top: 17px;
   }
 
-  .question-form label {
+  .question-form label[for="rules"] {
     width: 330px;
     margin: 0 auto;
     margin-top: 23px;
@@ -239,7 +248,7 @@
     font-size: 14px;
   }
 
-  .question-form label a {
+  .question-form label[for="rules"] a {
     display: inline;
     font-size: 14px;
   }

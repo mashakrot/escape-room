@@ -122,19 +122,23 @@
         <form class="question-form" action="#">
           <p class="question-form__text">Чтобы мы смогли обращаться к вам, оставьте ваше имя</p>
           <p class="question-form__name-in-focus question-form__name-in-focus--block">Имя</p>
-          <input name="name" type="text" autofocus="">
+          <label for="your-name">Имя</label>
+          <input name="name" id="your-name" type="text" autofocus="">
 
           <p class="question-form__text">Чтобы вы получили ответ, оставьте ваш e-mail </p>
           <p class="question-form__email-in-focus">E-mail</p>
-          <input name="e-mail" type="email" placeholder="E-mail">
+
+          <label for="your-email">E-mail</label>
+          <input name="e-mail" type="email" id="your-email" placeholder="E-mail">
           <p class="question-form__invalid-text question-form__invalid-text--none">Введён некорректный e-mail, попробуйте заново</p>
 
           <p class="question-form__moving-text">Ваш вопрос:</p>
-          <textarea name="question" placeholder="Начните вводить ..."></textarea>
+          <label for="your-question">Question</label>
+          <textarea name="question" id="your-question" placeholder="Начните вводить ..."></textarea>
           <button class="button button--submit-question" type="submit" disabled="">Отправить вопрос</button>
 
           <input class="question-form__checkbox" name="user-agreement" type="checkbox" id="rules">
-          <label class="question-form__label" for="rules">Я согласен с <a href="#">правилами обработки персональных данных</a> и пользовательским соглашением</label>
+          <label for="rules">Я согласен с <a href="#">правилами обработки персональных данных</a> и пользовательским соглашением</label>
         </form>
       </section>
 

@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+/* stylelint-disable */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -347,6 +348,7 @@ td,
 th {
   padding: 0;
 }
+/* stylelint-enable */
 body {
   min-width: 360px;
   padding: 0;
@@ -1529,20 +1531,28 @@ a:hover {
   clip: rect(0, 0, 0, 0);
 }
 .question-form label {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.question-form label[for="rules"] {
+  visibility: visible;
+  width: auto;
+  height: auto;
   margin-top: 23px;
   margin-left: 23px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
 }
-.question-form label a {
+.question-form label[for="rules"] a {
   display: inline-block;
   font-size: 14px;
   text-decoration: underline;
   vertical-align: baseline;
   color: #ffffff;
 }
-.question-form__checkbox + .question-form__label::before {
+.question-form__checkbox + label[for="rules"]::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -1552,7 +1562,7 @@ a:hover {
   background: #6d4312;
   border-radius: 4px;
 }
-.question-form__checkbox:checked + .question-form__label::before {
+.question-form__checkbox:checked + label[for="rules"]::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -1578,10 +1588,10 @@ a:hover {
   .question-form textarea {
     width: 380px;
   }
-  .question-form label {
+  .question-form label[for="rules"] {
     font-size: 13px;
   }
-  .question-form label a {
+  .question-form label[for="rules"] a {
     font-size: 13px;
   }
 }
@@ -1605,14 +1615,14 @@ a:hover {
     width: calc(100% - 10px);
     padding-top: 17px;
   }
-  .question-form label {
+  .question-form label[for="rules"] {
     width: 330px;
     margin: 0 auto;
     margin-top: 23px;
     padding-left: 23px;
     font-size: 14px;
   }
-  .question-form label a {
+  .question-form label[for="rules"] a {
     display: inline;
     font-size: 14px;
   }
