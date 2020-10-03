@@ -15,7 +15,7 @@
   var dateSpan = document.querySelector('.quest-order__date-span');
   var timeSpan = document.querySelector('.quest-order__time-span');
   var priceSpan = document.querySelector('.quest-order__price-span');
-  var sessionTimeInputs = document.querySelectorAll('.sessions-time-list__input');
+  var sessionTimeInputs = document.querySelectorAll('input[name="session-time"');
 
   var body = document.querySelector('.body-wrapper');
   var pageHeader = document.querySelector('.page-header__wrapper');
@@ -32,7 +32,7 @@
   };
 
   var setDate = function () {
-    if (body.classList.contains('.modal-type-date__input')) {
+    if (dateInput) {
       var newDate = new Date(dateInput.value);
       var day = newDate.getDate();
       var month = newDate.getMonth();
@@ -97,12 +97,16 @@
     }
   };
 
-  setDate();
-  selectDateButton.addEventListener('click', onButtonMouseDown);
-  selectDateButton.addEventListener('keydown', onButtonEnterPress);
-  window.addEventListener('keydown', onPopupEscPress);
-  dateInput.addEventListener('keydown', onPopupEnterPress);
-  window.addEventListener('click', onOverlayClick);
+  if (selectDateButton) {
+    setDate();
+    selectDateButton.addEventListener('click', onButtonMouseDown);
+    selectDateButton.addEventListener('keydown', onButtonEnterPress);
+    window.addEventListener('keydown', onPopupEscPress);
+    dateInput.addEventListener('keydown', onPopupEnterPress);
+    window.addEventListener('click', onOverlayClick);
+  }
 
-  sessionTimeList.addEventListener('change', checkSessionAvailability);
+  if (sessionTimeList) {
+    sessionTimeList.addEventListener('change', checkSessionAvailability);
+  }
 })();
