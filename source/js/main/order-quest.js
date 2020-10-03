@@ -32,15 +32,17 @@
   };
 
   var setDate = function () {
-    var newDate = new Date(dateInput.value);
-    var day = newDate.getDate();
-    var month = newDate.getMonth();
+    if (body.classList.contains('.modal-type-date__input')) {
+      var newDate = new Date(dateInput.value);
+      var day = newDate.getDate();
+      var month = newDate.getMonth();
 
-    if (dateInput.value.length < 1) {
-      selectedDate.innerHTML = '';
-    } else {
-      selectedDate.innerHTML = day + ' ' + months[month];
-      dateSpan.innerHTML = selectedDate.innerHTML;
+      if (dateInput.value.length < 1) {
+        selectedDate.innerHTML = '';
+      } else {
+        selectedDate.innerHTML = day + ' ' + months[month];
+        dateSpan.innerHTML = selectedDate.innerHTML;
+      }
     }
   };
 
