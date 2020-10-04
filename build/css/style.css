@@ -1523,6 +1523,7 @@ a:hover {
           box-sizing: border-box;
   border-radius: 3px;
   background-color: transparent;
+  resize: none;
 }
 .question-form input[type="checkbox"] {
   position: absolute;
@@ -1981,7 +1982,7 @@ a:hover {
   width: calc(100% - 14px);
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   margin-top: 316px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -2190,7 +2191,7 @@ a:hover {
   .quests-list {
     width: calc(25% + 515px);
     margin: 0 auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     margin-top: 374px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
