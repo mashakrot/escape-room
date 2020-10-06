@@ -16,7 +16,9 @@
     body.classList.add('body-wrapper--cities-popup-open');
     pageHeader.classList.add('page-header__wrapper--cities-popup-open');
     pageContent.classList.add('page-content--cities-popup-open');
-    pageContentWrapper.classList.add('page-content__wrapper--cities-popup-open');
+    if (pageContentWrapper) {
+      pageContentWrapper.classList.add('page-content__wrapper--cities-popup-open');
+    }
     pageFooter.classList.add('page-footer--cities-popup-open');
   };
 
@@ -25,7 +27,9 @@
     body.classList.remove('body-wrapper--cities-popup-open');
     pageHeader.classList.remove('page-header__wrapper--cities-popup-open');
     pageContent.classList.remove('page-content--cities-popup-open');
-    pageContentWrapper.classList.remove('page-content__wrapper--cities-popup-open');
+    if (pageContentWrapper) {
+      pageContentWrapper.classList.remove('page-content__wrapper--cities-popup-open');
+    }
     pageFooter.classList.remove('page-footer--cities-popup-open');
   };
 

@@ -27,7 +27,9 @@
     body.classList.add('body-wrapper--question-popup-open');
     pageHeader.classList.add('page-header__wrapper--question-popup-open');
     pageContent.classList.add('page-content--question-popup-open');
-    pageContentWrapper.classList.add('page-content__wrapper--question-popup-open');
+    if (pageContentWrapper) {
+      pageContentWrapper.classList.add('page-content__wrapper--question-popup-open');
+    }
     pageFooter.classList.add('page-footer--question-popup-open');
   };
 
@@ -36,7 +38,9 @@
     body.classList.remove('body-wrapper--question-popup-open');
     pageHeader.classList.remove('page-header__wrapper--question-popup-open');
     pageContent.classList.remove('page-content--question-popup-open');
-    pageContentWrapper.classList.remove('page-content__wrapper--question-popup-open');
+    if (pageContentWrapper) {
+      pageContentWrapper.classList.remove('page-content__wrapper--question-popup-open');
+    }
     pageFooter.classList.remove('page-footer--question-popup-open');
   };
 
