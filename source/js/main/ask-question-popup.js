@@ -31,6 +31,10 @@
       pageContentWrapper.classList.add('page-content__wrapper--question-popup-open');
     }
     pageFooter.classList.add('page-footer--question-popup-open');
+
+    nameInput.value = localStorage.getItem('userName');
+    emailInput.value = localStorage.getItem('userEmail');
+    questionInput.value = localStorage.getItem('userQuestion');
   };
 
   var closePopup = function () {
