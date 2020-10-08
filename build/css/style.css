@@ -423,7 +423,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(50% + 278px);
+  width: calc(50% + 267px);
   line-height: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -541,16 +541,18 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 377px);
+  width: calc(100% - 280px);
+  max-width: 640px;
   padding: 0;
   margin: 0;
   padding-top: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .navigation-list__item {
-  padding: 0 10px;
+  padding: 0;
+  padding-right: calc(20% - 81px);
+  padding-bottom: 10px;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -1230,7 +1232,7 @@ a:hover {
   min-height: 100vh;
   background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 0 calc(30% + 14px);
+  background-position: 0 calc(30% - 40px);
   background-size: calc(100% + 236px) auto;
   background-color: #22150e;
 }
@@ -1493,6 +1495,10 @@ a:hover {
 .question-form input:focus {
   border-color: #2cdb52;
 }
+.question-form input:required {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .question-form__invalid-text {
   display: block;
   padding: 0;
@@ -1545,6 +1551,7 @@ a:hover {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+  cursor: pointer;
 }
 .question-form label[for="rules"] a {
   display: inline-block;
@@ -2991,6 +2998,7 @@ input[name="session-time"]:checked + label {
   background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border-color: #ffffff;
   border-radius: 3px;
+  overflow: auto;
 }
 @media (max-width: 1023px) {
   .modal-window {

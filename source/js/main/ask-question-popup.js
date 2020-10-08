@@ -32,6 +32,8 @@
     }
     pageFooter.classList.add('page-footer--question-popup-open');
 
+    nameInput.focus();
+
     nameInput.value = localStorage.getItem('userName');
     emailInput.value = localStorage.getItem('userEmail');
     questionInput.value = localStorage.getItem('userQuestion');
@@ -78,6 +80,9 @@
 
   var checkForm = function () {
     buttonAskQuestion.addEventListener('mouseover', function () {
+      buttonAskQuestion.innerHTML = '? Задать вопрос';
+    });
+    buttonAskQuestion.addEventListener('focus', function () {
       buttonAskQuestion.innerHTML = '? Задать вопрос';
     });
     buttonAskQuestion.addEventListener('mouseout', function () {
