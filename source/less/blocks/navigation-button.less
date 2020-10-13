@@ -4,7 +4,7 @@
 
 @media (max-width: @mobile-width) {
   .navigation-button {
-    display: block;
+    display: none;
     margin-top: 16px;
     margin-right: 31px;
     text-transform: uppercase;
@@ -12,6 +12,10 @@
     font-size: 14px;
     color: #ffffff;
     cursor: pointer;
+  }
+
+  .navigation-button--js-is {
+    display: block;
   }
 
   .navigation-button:hover {

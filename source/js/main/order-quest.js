@@ -25,7 +25,7 @@
   var checkSessionAvailability = function () {
     for (var i = 0; i < sessionTimeInputs.length; i++) {
       if (sessionTimeInputs[i].checked === true) {
-        timeSpan.innerHTML = sessionTimeInputs[i].value;
+        timeSpan.innerHTML = sessionTimeInputs[i].value + '.';
         priceSpan.innerHTML = priceList[i].innerHTML;
       }
     }

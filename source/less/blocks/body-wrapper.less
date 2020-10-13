@@ -11,7 +11,8 @@
   min-height: 100vh;
   background-image: url("../img/maniac-bg.jpg");
   background-repeat: no-repeat;
-  background-position: -470px calc(25% + 59px);
+  // background-position: -470px calc(25% + 59px);
+  background-position: -470px calc(25% + 24px);
   background-size: calc(100% + 470px) auto;
   background-color: #040506;
 }
@@ -117,35 +118,59 @@
 @media (max-width: @mobile-width) {
   .body-wrapper__main {
     background-size: calc(100% + 697px) auto;
+    background-position: calc(50% + 66px) 500px;
+  }
+
+  .body-wrapper__main--js-is {
     background-position: calc(50% + 66px) -46px;
   }
 
   .body-wrapper__maniac {
     background-size: calc(100% + 560px) auto;
+    background-position: calc(50% + 14px) 370px;
+  }
+
+  .body-wrapper__maniac--js-is {
     background-position: calc(50% + 14px) -176px;
   }
 
   .body-wrapper__maniac-order {
     background-image: url("../img/maniac-order-bg-mobile.png");
     background-size: 100% 100vh;
+    background-position: 0 546px;
   }
 
+  .body-wrapper__maniac-order--js-is {
+    background-position: 0 0;
+  }
 
   .body-wrapper__secrets-of-mansion {
-    background-position: calc(50% + 79px) -128px;
     background-size: auto calc(100% + 128px);
+    background-position: calc(50% + 79px) 418px;
+  }
+
+  .body-wrapper__secrets-of-mansion--js-is {
+    background-position: calc(50% + 79px) -128px;
   }
 
   .body-wrapper__ritual {
     background-size: calc(100% + 798px) auto;
+    background-position: calc(50% + 23px) 408px;
+  }
+
+  .body-wrapper__ritual--js-is {
     background-position: calc(50% + 23px) -138px;
   }
 
   .body-wrapper__fatal-experiment {
     background-repeat: no-repeat;
-    background-position: calc(50% - 166px) 0;
+    background-position: calc(50% - 166px) 546px;
     background-size: calc(100% + 609px) auto;
     background-color: #211514;
+  }
+
+  .body-wrapper__fatal-experiment--js-is {
+    background-position: calc(50% - 166px) 0;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {

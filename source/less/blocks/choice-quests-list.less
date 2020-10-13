@@ -200,17 +200,8 @@
 }
 
 @media (max-width: @mobile-width) {
-  .choice-quests-list-wrapper {
-    position: absolute;
-    left: calc(50% - 166px);
-    top: 130px;
-    width: 332px;
-    overflow: hidden;
-    background-color: #1f1d1d;
-  }
-
   .choice-quests-list {
-    width: 1751px;
+    // width: 1751px;
     height: 32px;
     margin-top: 41px;
     flex-wrap: inherit;
@@ -220,13 +211,14 @@
   .choice-quests-list__item {
     margin: 0;
     padding: 0;
-    padding-right: 16px;
+    padding-right: 17px;
     padding-top: 8px;
     padding-left: 55px;
     font-size: 14px;
   }
 
   .choice-quests-list__item a {
+    display: ruby;
     height: 19px;
   }
 
@@ -246,7 +238,8 @@
     width: 21px;
     height: 24px;
     margin-top: -4px;
-    margin-left: -71px;
+    // margin-left: -71px;
+    margin-left: -31px;
     background-size: 21px 24px;
   }
 
@@ -254,7 +247,8 @@
     width: 29px;
     height: 24px;
     margin-top: -4px;
-    margin-left: -87px;
+    // margin-left: -87px;
+    margin-left: -39px;
     background-size: 29px 24px;
   }
 
@@ -262,13 +256,15 @@
     width: 24px;
     height: 24px;
     margin-top: -4px;
+    margin-left: -40px;
     background-size: 24px 24px;
   }
 
-  .choice-quests-list__mystics::before {
+  .choice-quests-list__mysticism::before {
     width: 24px;
     height: 24px;
     margin-top: -4px;
+    margin-left: -40px;
     background-size: 24px 24px;
   }
 
@@ -276,6 +272,7 @@
     width: 32px;
     height: 24px;
     margin-top: -4px;
+    margin-left: -40px;
     background-size: 32px 24px;
   }
 
@@ -283,6 +280,7 @@
     width: 23px;
     height: 24px;
     margin-top: -4px;
+    margin-left: -40px;
     background-size: 23px 24px;
   }
 }

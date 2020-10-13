@@ -393,6 +393,8 @@ a:hover {
   src: url("../fonts/raleway-regular.woff2") format("woff2"), url("../fonts/raleway-regular.woff") format("woff");
 }
 .page-header {
+  position: fixed;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,6 +402,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 70;
 }
 .page-header__logo {
   display: block;
@@ -433,13 +436,14 @@ a:hover {
 }
 .page-header__wrapper {
   z-index: 50;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: calc(100% - 63px);
   max-width: 1303px;
   padding-top: 24px;
-  position: fixed;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -486,7 +490,8 @@ a:hover {
   }
 }
 @media (max-width: 767px) {
-  .page-header__wrapper {
+  .page-header {
+    position: static;
     width: 100%;
     padding-bottom: 10px;
     -webkit-box-orient: vertical;
@@ -496,6 +501,33 @@ a:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    z-index: 70;
+    height: 100%;
+  }
+  .page-header__wrapper {
+    position: static;
+    width: 100%;
+    padding-bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    z-index: 70;
+    height: 100%;
+    background: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
+  }
+  .page-header__wrapper--js-is {
+    position: fixed;
+    background: none;
+    z-index: 0;
+    height: auto;
+  }
+  .page-header__wrapper--painted {
+    background: #1f1d1d;
+    z-index: 50;
   }
   .page-header__wrapper--menu-open {
     z-index: 70;
@@ -503,7 +535,9 @@ a:hover {
     background: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
   }
   .page-header__navigation {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     height: 100%;
     line-height: 31px;
@@ -511,6 +545,9 @@ a:hover {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .page-header__navigation--js-is {
+    display: none;
   }
   .page-header__navigation--menu-open {
     display: -webkit-box;
@@ -600,6 +637,7 @@ a:hover {
 @media (max-width: 767px) {
   .navigation-list {
     padding-top: 20px;
+    margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -694,8 +732,8 @@ a:hover {
   width: calc(100% - 272px);
   max-width: 1094px;
   margin: 0 auto;
-  margin-top: 74px;
   padding: 0;
+  padding-top: 74px;
 }
 .page-content h1 {
   padding: 0;
@@ -799,7 +837,8 @@ a:hover {
     display: flex;
     width: calc(100% - 32px);
     height: 100%;
-    margin-bottom: 64px;
+    padding-bottom: 64px;
+    padding-top: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -807,6 +846,9 @@ a:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .page-content--js-is {
+    padding-top: 74px;
   }
   .page-content h1 {
     margin: 0 auto;
@@ -818,9 +860,15 @@ a:hover {
     display: none;
   }
   .page-content__wrapper {
+    position: static;
     top: 66px;
     width: calc(100% - 28px);
     min-width: auto;
+    z-index: 0;
+  }
+  .page-content__wrapper--js-is {
+    position: fixed;
+    z-index: 50;
   }
   .page-content__wrapper h1 {
     width: 328px;
@@ -898,9 +946,10 @@ a:hover {
 @media (max-width: 1023px) {
   .button--select-quest {
     width: 225px;
-    height: 32px;
+    height: 38px;
     font-size: 15px;
     margin-top: 55px;
+    padding-top: 19px;
   }
 }
 @media (max-width: 767px) {
@@ -957,6 +1006,9 @@ a:hover {
 }
 @media (max-width: 767px) {
   .page-footer {
+    display: block;
+  }
+  .page-footer--js-is {
     display: none;
   }
   .page-footer--menu-open {
@@ -1240,7 +1292,7 @@ a:hover {
   min-height: 100vh;
   background-image: url("../img/maniac-bg.jpg");
   background-repeat: no-repeat;
-  background-position: -470px calc(25% + 59px);
+  background-position: -470px calc(25% + 24px);
   background-size: calc(100% + 470px) auto;
   background-color: #040506;
 }
@@ -1327,29 +1379,48 @@ a:hover {
 @media (max-width: 767px) {
   .body-wrapper__main {
     background-size: calc(100% + 697px) auto;
+    background-position: calc(50% + 66px) 500px;
+  }
+  .body-wrapper__main--js-is {
     background-position: calc(50% + 66px) -46px;
   }
   .body-wrapper__maniac {
     background-size: calc(100% + 560px) auto;
+    background-position: calc(50% + 14px) 370px;
+  }
+  .body-wrapper__maniac--js-is {
     background-position: calc(50% + 14px) -176px;
   }
   .body-wrapper__maniac-order {
     background-image: url("../img/maniac-order-bg-mobile.png");
     background-size: 100% 100vh;
+    background-position: 0 546px;
+  }
+  .body-wrapper__maniac-order--js-is {
+    background-position: 0 0;
   }
   .body-wrapper__secrets-of-mansion {
-    background-position: calc(50% + 79px) -128px;
     background-size: auto calc(100% + 128px);
+    background-position: calc(50% + 79px) 418px;
+  }
+  .body-wrapper__secrets-of-mansion--js-is {
+    background-position: calc(50% + 79px) -128px;
   }
   .body-wrapper__ritual {
     background-size: calc(100% + 798px) auto;
+    background-position: calc(50% + 23px) 408px;
+  }
+  .body-wrapper__ritual--js-is {
     background-position: calc(50% + 23px) -138px;
   }
   .body-wrapper__fatal-experiment {
     background-repeat: no-repeat;
-    background-position: calc(50% - 166px) 0;
+    background-position: calc(50% - 166px) 546px;
     background-size: calc(100% + 609px) auto;
     background-color: #211514;
+  }
+  .body-wrapper__fatal-experiment--js-is {
+    background-position: calc(50% - 166px) 0;
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -1678,7 +1749,7 @@ a:hover {
 }
 @media (max-width: 767px) {
   .navigation-button {
-    display: block;
+    display: none;
     margin-top: 16px;
     margin-right: 31px;
     text-transform: uppercase;
@@ -1686,6 +1757,9 @@ a:hover {
     font-size: 14px;
     color: #ffffff;
     cursor: pointer;
+  }
+  .navigation-button--js-is {
+    display: block;
   }
   .navigation-button:hover {
     opacity: 0.8;
@@ -1905,16 +1979,7 @@ a:hover {
   }
 }
 @media (max-width: 767px) {
-  .choice-quests-list-wrapper {
-    position: absolute;
-    left: calc(50% - 166px);
-    top: 130px;
-    width: 332px;
-    overflow: hidden;
-    background-color: #1f1d1d;
-  }
   .choice-quests-list {
-    width: 1751px;
     height: 32px;
     margin-top: 41px;
     -ms-flex-wrap: inherit;
@@ -1926,12 +1991,13 @@ a:hover {
   .choice-quests-list__item {
     margin: 0;
     padding: 0;
-    padding-right: 16px;
+    padding-right: 17px;
     padding-top: 8px;
     padding-left: 55px;
     font-size: 14px;
   }
   .choice-quests-list__item a {
+    display: ruby;
     height: 19px;
   }
   .choice-quests-list__item:first-child {
@@ -1947,38 +2013,42 @@ a:hover {
     width: 21px;
     height: 24px;
     margin-top: -4px;
-    margin-left: -71px;
+    margin-left: -31px;
     background-size: 21px 24px;
   }
   .choice-quests-list__adventures::before {
     width: 29px;
     height: 24px;
     margin-top: -4px;
-    margin-left: -87px;
+    margin-left: -39px;
     background-size: 29px 24px;
   }
   .choice-quests-list__horrors::before {
     width: 24px;
     height: 24px;
     margin-top: -4px;
+    margin-left: -40px;
     background-size: 24px 24px;
   }
-  .choice-quests-list__mystics::before {
+  .choice-quests-list__mysticism::before {
     width: 24px;
     height: 24px;
     margin-top: -4px;
+    margin-left: -40px;
     background-size: 24px 24px;
   }
   .choice-quests-list__detective::before {
     width: 32px;
     height: 24px;
     margin-top: -4px;
+    margin-left: -40px;
     background-size: 32px 24px;
   }
   .choice-quests-list__sci-fi::before {
     width: 23px;
     height: 24px;
     margin-top: -4px;
+    margin-left: -40px;
     background-size: 23px 24px;
   }
 }
@@ -1990,7 +2060,7 @@ a:hover {
   padding: 0;
   margin: 0;
   padding-bottom: 50px;
-  margin-top: 316px;
+  margin-top: 242px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -2051,9 +2121,7 @@ a:hover {
 .quests-list h2 {
   padding: 0;
   margin: 0;
-  margin-bottom: 11px;
   margin-left: 19px;
-  margin-top: 86px;
   font-weight: 500;
   font-size: 24px;
   color: #ffffff;
@@ -2081,10 +2149,11 @@ a:hover {
   background-position: 0 0;
 }
 .quests-list__title-wrapper {
-  height: 126px;
+  height: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 11px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2220,6 +2289,9 @@ a:hover {
   .quests-list {
     width: 328px;
     margin: 0 auto;
+    margin-top: 97px;
+  }
+  .quests-list--js-is {
     margin-top: 220px;
   }
   .quests-list__item {
@@ -2279,11 +2351,11 @@ a:hover {
   background-position: 0 0;
 }
 .quest-page-content {
-  width: 50%;
+  width: auto;
   padding: 0;
   margin: 0;
-  margin-left: calc(50% - 82px);
-  margin-top: calc(25vh - 53px);
+  padding-top: calc(25vh - 53px);
+  margin-left: calc(75% - 423px);
 }
 .quest-page-content__wrapper h1 {
   padding: 0;
@@ -2328,7 +2400,7 @@ a:hover {
   .quest-page-content {
     margin: 0;
     padding: 0;
-    margin-top: 90px;
+    padding-top: 90px;
     padding-bottom: 58px;
   }
   .quest-page-content__wrapper {
@@ -2495,7 +2567,7 @@ a:hover {
   width: calc(100% - 272px);
   padding: 0;
   margin: 0 auto;
-  margin-top: 138px;
+  padding-top: 138px;
 }
 .quest-order__genre {
   display: none;
@@ -2571,7 +2643,7 @@ a:hover {
 @media (max-width: 767px) {
   .quest-order {
     width: calc(100% - 32px);
-    margin-top: 90px;
+    padding-top: 90px;
     padding-bottom: 90px;
   }
   .quest-order .quest-order__text {
@@ -2633,7 +2705,7 @@ a:hover {
   }
   .quest-order__wrapper p {
     display: block;
-    width: 100%;
+    width: 260px;
     padding-top: 7px;
   }
 }
@@ -2690,6 +2762,7 @@ a:hover {
   }
 }
 .payment-button {
+  display: inline-table;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -3018,10 +3091,14 @@ input[name="session-time"]:checked + label {
   .choice-quests-list-wrapper {
     position: absolute;
     left: calc(50% - 166px);
-    top: 130px;
+    top: 752px;
     width: 332px;
     overflow: hidden;
+    overflow-x: scroll;
     background-color: #1f1d1d;
+  }
+  .choice-quests-list-wrapper--js-is {
+    top: 130px;
   }
 }
 

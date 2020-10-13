@@ -2,8 +2,8 @@
   width: calc(100% - 272px);
   max-width: 1094px;
   margin: 0 auto;
-  margin-top: 74px;
   padding: 0;
+  padding-top: 74px;
 }
 
 .page-content h1 {
@@ -123,9 +123,14 @@
     display: flex;
     width: calc(100% - 32px);
     height: 100%;
-    margin-bottom: 64px;
+    padding-bottom: 64px;
+    padding-top: 30px;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .page-content--js-is {
+    padding-top: 74px;
   }
 
   .page-content h1 {
@@ -140,9 +145,16 @@
   }
 
   .page-content__wrapper {
+    position: static;
     top: 66px;
     width: calc(100% - 28px);
     min-width: auto;
+    z-index: 0;
+  }
+
+  .page-content__wrapper--js-is {
+    position: fixed;
+    z-index: 50;
   }
 
   .page-content__wrapper h1 {
