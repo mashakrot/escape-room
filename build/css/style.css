@@ -852,7 +852,7 @@ a:hover {
   }
   .page-content h1 {
     margin: 0 auto;
-    padding-top: 341px;
+    padding-top: 331px;
     font-size: 36px;
     text-align: center;
   }
@@ -1980,6 +1980,9 @@ a:hover {
 }
 @media (max-width: 767px) {
   .choice-quests-list {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     height: 32px;
     margin-top: 41px;
     -ms-flex-wrap: inherit;
@@ -1989,15 +1992,20 @@ a:hover {
             justify-content: normal;
   }
   .choice-quests-list__item {
+    display: block;
+    display: inline-block;
     margin: 0;
     padding: 0;
     padding-right: 17px;
     padding-top: 8px;
     padding-left: 55px;
+    width: auto;
     font-size: 14px;
   }
   .choice-quests-list__item a {
-    display: ruby;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     height: 19px;
   }
   .choice-quests-list__item:first-child {
@@ -2160,7 +2168,7 @@ a:hover {
           flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 .quests-list__item--vault {
   background-image: url("../img/vault.png");
@@ -2292,7 +2300,7 @@ a:hover {
     margin-top: 97px;
   }
   .quests-list--js-is {
-    margin-top: 220px;
+    margin-top: 210px;
   }
   .quests-list__item {
     width: 100%;
@@ -2400,7 +2408,7 @@ a:hover {
   .quest-page-content {
     margin: 0;
     padding: 0;
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 58px;
   }
   .quest-page-content__wrapper {
@@ -2643,7 +2651,7 @@ a:hover {
 @media (max-width: 767px) {
   .quest-order {
     width: calc(100% - 32px);
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 90px;
   }
   .quest-order .quest-order__text {
