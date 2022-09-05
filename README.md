@@ -1,4 +1,17 @@
-# Прооект акселератора Escape Room
+#  Website about booking the quest rooms 
+Made by Marija Krotova
+
+## Website navigation:
+
+    main.html --- Main page
+    catalog.html ---All quests in the city
+    maniac.html --- Quest "Maniac"
+    ritual.html --- Quest "Ritual"
+    secret-of-old-mansion.html --- Quest "Secrets of old mansion"
+    fatal-experiment.html --- Quest "Fatal experiment"
+    order.html --- Booking a quest of your choice
+
+Прооект акселератора Escape Room
 ## Краткая инструкция по работе
 ### Для начала работы у вас должент быть установлен:
 * Node.js v.10.15.3
