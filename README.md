@@ -1,7 +1,7 @@
 #  Website about booking the quest rooms 
 Made by Marija Krotova
 
-# [https://mashakrot.github.io/escape-room/build/main.html](https://mashakrot.github.io/escape-room/build/main.html)
+# [main page](https://mashakrot.github.io/escape-room/build/main.html)
 ## Website navigation:
 
     main.html --- Main page
